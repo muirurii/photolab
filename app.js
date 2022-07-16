@@ -3,11 +3,9 @@ const introTextCont = document.querySelector(".intro-text p");
 const introText = `Life is a collection of all your moments.We offer competent photography and editing services.Our HD lenses await to capture your best memories with the best shots.`;
 
 const withSpan = [...introText].map((letter, index) => {
-    return letter === "." ?
-        `<span style='animation-delay:${index * 20}ms;'>.</span><br/>` :
-        `<span style='animation-delay:${index * 20}ms;'>${
-        letter === " " ? "&nbsp;" : letter
-      }</span>`;
+    return `<span style='animation-delay:${index * 20}ms;'>${letter}</span>${
+        letter === "." ? "</br>" : ""
+      }`;
 });
 
 const callToAction = document.querySelector(".cta");
@@ -98,36 +96,51 @@ Booking
 
 const nextBtn = document.querySelectorAll(".next");
 const prevBtn = document.querySelectorAll(".prev");
-const forms = document.querySelectorAll('.form-group');
-const steps = document.querySelectorAll('.step');
+const forms = document.querySelectorAll(".form-group");
+const steps = document.querySelectorAll(".step");
 
-const handleStep = active => {
-    const index = Array.from(forms).findIndex(element => element === active)
-    console.log(index)
+const handleStep = (activeEl) => {
+    const index = Array.from(forms).findIndex((element) => element === activeEl);
+    document.querySelector(".active").classList.remove("active");
+    steps[index].classList.add("active");
+};
+
+const validateForm = form => {
+    const inputs = [...form.querySelectorAll('input'), ...form.querySelectorAll('select')];
+    const invalid = inputs.some(i => i.value.trim().length < 1);
+    return invalid;
 }
 
-const getCurrentActiveForm = element => {
-    const curentActiveForm = element.parentElement;
-    curentActiveForm.className = 'form-group';
-    return curentActiveForm;
-}
-
-const handeNextForm = e => {
+const handeNextForm = (e) => {
     e.preventDefault();
-    const curentActiveForm = getCurrentActiveForm(e.target);
+    const curentActiveForm = e.target.parentElement.parentElement;
+    const validator = validateForm(curentActiveForm);
+    console.log(validator)
+    if (validator) return;
+    curentActiveForm.className = "form-group";
     const activeForm = curentActiveForm.nextElementSibling;
-    activeForm.className = 'form-group active right';
+    activeForm.className = "form-group active right";
     handleStep(activeForm);
-}
+};
 
 nextBtn.forEach((button) => button.addEventListener("click", handeNextForm));
 
-const handlePrevForm = e => {
+const handlePrevForm = (e) => {
     e.preventDefault();
-    const curentActiveForm = getCurrentActiveForm(e.target);
+    const curentActiveForm = e.target.parentElement.parentElement;
+    curentActiveForm.className = "form-group";
     const activeForm = curentActiveForm.previousElementSibling;
-    activeForm.className = 'form-group active left';
+    activeForm.className = "form-group active left";
     handleStep(activeForm);
-}
+};
 
 prevBtn.forEach((button) => button.addEventListener("click", handlePrevForm));
+
+//submit
+
+const form = document.querySelector('.booking-form');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    validateForm()
+})
