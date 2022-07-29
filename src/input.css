@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .main-menu li:hover>span {
+        /* background-color: theme(colors.fade) */
+    }
+    .main-menu li::before {
+        transition: transform 300ms, opacity 300ms 0ms ease-in;
+    }
+    .intro p span {
+        transform: scale(0.5) rotateZ(20deg);
+        animation: text 200ms linear forwards;
+    }
+    @keyframes text {
+        to {
+            color: var(--text);
+            transform: scale(1) rotateZ(0deg);
+        }
+    }
+}
