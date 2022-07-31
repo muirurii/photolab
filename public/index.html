@@ -16,13 +16,13 @@
 </head>
 
 <body class="font-mFont bg-white text-text">
-    <header class="h-[70px] bg-white fixed top-0 z-30 flex items-center justify-between w-screen">
-        <div class="flex items-center w-full">
+    <header class="h-[70px] w-full bg-white fixed top-0 z-30 flex items-center justify-between">
+        <div class="flex items-center w-full h-full bg-white sm:w-fit">
             <h1 class="font-logo text-3xl pl-4">photo<span class="text-secondary">Lab</span></h1>
             <svg class="stroke-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 128 128" height="40px" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve"><path clip-rule="evenodd" d="  M90.944,31.962h11.707c8.936,0,16.18,7.244,16.18,16.179v44.763c0,8.936-7.244,16.179-16.18,16.179H25.349  c-8.936,0-16.179-7.244-16.179-16.179V48.141c0-8.936,7.244-16.179,16.179-16.179h11.707H90.944z" fill="none" fill-rule="evenodd" stroke="#000000" stroke-miterlimit="10" stroke-width="3"/><g><g><path d="M103.115,70.523c-0.146,11.971-7.966,22.438-19.496,25.781c-11.565,3.353-23.914-2.125-29.987-12.287    c-6.196-10.366-4.138-23.86,4.152-32.399c8.385-8.637,21.871-10.094,32.179-4.18C98.171,52.147,103.001,61.176,103.115,70.523    c0.023,1.933,3.023,1.936,3,0c-0.135-11.018-6.086-21.05-15.789-26.318c-9.726-5.28-21.921-4.244-30.879,2.08    C50.57,52.551,45.825,63.67,47.272,74.411c1.467,10.886,8.733,19.908,18.893,23.949c9.051,3.6,19.638,1.957,27.509-3.599    c7.848-5.538,12.325-14.712,12.441-24.238C106.139,68.587,103.139,68.59,103.115,70.523z"/></g></g><g><g><path d="M90.096,70.523c-0.168,7.519-5.99,13.462-13.536,13.633c-7.545,0.171-13.372-6.373-13.534-13.633    c-0.168-7.518,6.242-13.468,13.534-13.633C84.104,56.719,89.934,63.262,90.096,70.523c0.043,1.932,3.043,1.936,3,0    c-0.205-9.167-7.342-16.425-16.536-16.633c-9.192-0.208-16.337,7.78-16.535,16.633c-0.205,9.167,7.649,16.432,16.535,16.633    c9.193,0.208,16.339-7.778,16.536-16.633C93.139,68.587,90.139,68.591,90.096,70.523z"/></g></g><g><g><path d="M31.329,46.546c-0.254,4.719-7.066,4.719-7.32,0C23.754,41.824,31.076,41.849,31.329,46.546c0.104,1.924,3.104,1.934,3,0    c-0.203-3.766-2.894-6.458-6.66-6.66c-3.758-0.203-6.474,3.199-6.661,6.66c-0.202,3.758,3.2,6.474,6.661,6.66    c3.757,0.202,6.473-3.2,6.66-6.66C34.433,44.612,31.433,44.622,31.329,46.546z"/></g></g><g><g><path d="M91.518,17.417c-8.881,0-17.763,0-26.644,0c-0.719,0-1.201,0.469-1.446,1.101c-1.685,4.349-3.37,8.697-5.055,13.045    c-0.359,0.926,0.546,1.899,1.446,1.899c11.97,0,23.941,0,35.911,0c0.943,0,1.748-0.963,1.446-1.899    c-1.404-4.348-2.808-8.697-4.212-13.045c-0.592-1.833-3.489-1.049-2.893,0.798c1.404,4.348,2.808,8.697,4.212,13.045    c0.482-0.633,0.964-1.266,1.446-1.899c-11.97,0-23.94,0-35.911,0c0.482,0.633,0.964,1.266,1.446,1.899    c1.685-4.349,3.371-8.697,5.055-13.045c-0.482,0.367-0.964,0.734-1.446,1.101c8.881,0,17.763,0,26.644,0    C93.452,20.417,93.452,17.417,91.518,17.417z"/></g></g><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="7.292" stroke="#000000" stroke-miterlimit="10" stroke-width="3" width="12.944" x="26.357" y="24.67"/></svg>
         </div>
-        <nav class="bg-secondary h-full w-[403px] px-4 flex items-center">
-            <ul class="flex items-center justify-center font-ligh h-16 main-menu">
+        <nav class="bg-secondary h-48 sm:h-full w-48 sm:w-80 py-4 absolute sm:relative top-[70px] sm:top-0 right-0 scale-0 -translate-y-menuHide -z-10 sm:transform-none px-4 items-center transition-all ease-in-out duration-[300] sm:transition-none menu">
+            <ul class="flex flex-col sm:flex-row sm:items-center justify-center h-full w-full">
                 <a href="#">
                     <li class="relative transition-color text-white hover:text-text before:bg-text before:h-[1px] before:absolute before:left-1/2 before:-bottom-[1px] before:-translate-x-1/2 before:opacity-0 before:-translate-y-4 before:bg-main before:w-7 hover:before:opacity-100 hover:before:translate-y-0 hover:before:top-100%">
                         <span class="text-sm px-2">home</span>
@@ -41,19 +41,25 @@
                 </a>
             </ul>
         </nav>
+        <button type="menu" class="sm:hidden absolute w-fit h-fit right-3 top-1/2 -translate-y-1/2 menu-toggle">
+            <svg class="fill-text" width="25px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+                <rect width="16" height="16" id="icon-bound" fill="none"/>
+                <path d="M1,9h14V7H1V9z M1,14h14v-2H1V14z M1,2v2h14V2H1z"/>
+            </svg>
+        </button>
     </header>
     <main>
-        <section class="relative h-hero mt-[80px]">
-            <article class="flex flex-col justify-center h-full pl-12 intro z-10 relative">
+        <section class="relative min-h-screen pt-[70px]">
+            <article class="flex flex-col justify-center min-h-hero pl-12 intro z-10 relative">
                 <h1 class="font-headline text-6xl">
                     INCH PERFECT<br/>
-                    <span class="text-secondary z-t">PHOTOGRAPHY</span> AND <br/> <span class="text-secondary z-t">EDITING</span> SERVICES
+                    <span class="text-secondary z-text">PHOTOGRAPHY</span> AND <br/> <span class="text-secondary z-text">EDITING</span> SERVICES
                 </h1>
                 <p class="mt-4"></p>
                 <button class="bg-secondary rounded text-white text-sm w-fit mt-8 py-3 px-6 border border-secondary transition-all hover:text-text hover:bg-white">Get started</button>
             </article>
-            <img class="absolute bottom-4 [transform:rotateY(90deg)] -translate-x-48 right-14 h-[450px] w-[508px] hero-image" src="https://images.pexels.com/photos/464181/pexels-photo-464181.jpeg?auto=compress&cs=tinysrgb&w=600" alt="HERO IMAGE">
-            <div class="bg-secondary w-[300px] h-screen absolute right-0 top-[-80px] -z-10"></div>
+            <img class="w-11/12 sm:w-96 md:w-[508px] h-96 md:h-[450px] md:absolute md:bottom-16 md:right-4" src="https://images.pexels.com/photos/464181/pexels-photo-464181.jpeg?auto=compress&cs=tinysrgb&w=600" alt="HERO IMAGE">
+            <div class="absolute right-0 bottom-0 -z-10 bg-secondary w-80 h-80 md:h-hero"></div>
         </section>
         <section id="gallery" class="pt-20">
             <h1 class="text-3xl pl-4 pb-8">Gallery</h1>
@@ -123,27 +129,124 @@
                 </article>
             </section>
         </section>
-        <section class="pt-8">
-            <h1 class="pb-4 text-text text-3xl pl-4">Booking</h1>
+        <section class="pt-16 grid grid-cols-2" id="booking">
             <section>
-                <form class="bg-gray-300 pl-4">
-                    <div>
-
+                <h1 class="pb-4 text-text text-3xl pl-4">Booking</h1>
+                <form class="pl-4 book">
+                    <div class="pt-8">
+                        <input id="name" required type="text" class="input peer block h-10 w-[400px] border-b-2 border-b-main transition-colors hover:border-secondary outline-none placeholder:invisible focus:placeholder:visible" placeholder="enter your name">
+                        <label for="name" class="block absolute -translate-y-8 transition-transform duration-300 ease-out peer-focus:-translate-y-16">Name</label>
                     </div>
-                    <input type="text" class="block border-b-2 border-b-secondary" placeholder="Name">
-                    <input type="email" class="block border-b-2 border-b-secondary" placeholder="Email">
-                    <div class="service-type">
-                        <label for="">Photography type</label>
-                        <input type="radio" name="service-type" value="Portrait" id="">
-                        <input type="radio" name="service-type" value="Fashion" id="">
-                        <input type="radio" name="service-type" value="Architectural" id="">
+                    <div class="pt-8">
+                        <input id="email" required type="email" class="input peer block h-10 w-[400px] border-b-2 border-b-main transition-colors hover:border-secondary outline-none placeholder:invisible focus:placeholder:visible" placeholder="enter your email">
+                        <label for="email" class="block absolute -translate-y-8 transition-transform duration-300 ease-out peer-focus:-translate-y-16 ">Email</label>
                     </div>
+                    <div class="service-type pt-8">
+                        <label class="block">Photography type</label>
+                        <div class="flex items-center pt-2">
+                            <div>
+                                <input type="radio" class="peer accent-text" name="service-type" value="Portrait" id="portrait">
+                                <label for="portrait" class="text-sm mr-4 font-light peer-checked:text-secondary">portrait</label>
+                            </div>
+                            <div>
+                                <input type="radio" class="peer accent-text" name="service-type" value="Fashion" id="fashion">
+                                <label for="fashion" class="text-sm mr-4 font-light peer-checked:text-secondary">fashion</label>
+                            </div>
+                            <div>
+                                <input type="radio" class="peer accent-text" name="service-type" value="Architectural" id="architectural">
+                                <label for="architectural" class="text-sm mr-4 font-light peer-checked:text-secondary">architectural</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="block mt-4 py-[10px] px-7 bg-secondary text-white text-sm rounded-sm transition-opacity hover:opacity-80">Book</button>
                 </form>
+            </section>
+            <section class="w-full h-full bg-main">
+                <h1 class="text-3xl pb-4 pl-4">Contacts</h1>
+                <section>
+                    <ul>
+                        <li class="pl-4 pb-4">
+                            <svg class="w-5 fill-secondary inline-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512">
+                                <g><g>
+                                    <path d="m499.2,203.5l-123-187.8c-3.2-4.9-10.1-6.9-15.8-2.1l-273.4,226.6c-4.2,3.1-5.3,9.4-2.1,13.6l124.1,187.8c3.8,5.7 11.6,5.1 14.7,2.1l273.4-226.6c4.2-3.1 5.2-9.4 2.1-13.6zm-147.1-155.6l-38,215.4-194.5-23.2 232.5-192.2zm-132.6,371.7l-104.1-158.7 207.1,25.5h1.1c4.2,0 9.5-4.2 10.5-10.5l39.5-227 103.5,157.8-257.6,212.9z"/>
+                                    <polygon points="75.8,322 11,375.6 24.4,391.7 89.2,338.2   "/>
+                                    <polygon points="97,376.2 32.3,429.7 45.7,445.9 110.4,392.3   "/>
+                                    <polygon points="54.2,484.7 67.6,500.9 132.4,447.3 118.9,431.2   "/>
+                                  </g></g>
+                            </svg>
+                            <span>info@photolab.gmail.com</span>
+                        </li>
+                        <li class="pl-4 pb-4">
+                            <svg class="w-5 fill-secondary inline-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 395 395" style="enable-background:new 0 0 395 395;" xml:space="preserve">
+                                <g>
+                                    <path d="M204.696,249.673c-5.604,6.772-21.093-10.927-31.559-24.85c-10.479-13.909-20.657-35.314-12.362-38.218   c15.39-5.368,6.384-41.444-5.875-59.048c-12.269-17.617-25.103-29.883-43.568-17.027c-4.631,3.23-45.871,43.993,22.263,141.827   c68.13,97.84,120.666,73.302,125.295,70.078c18.469-12.862,11.415-29.15-0.85-46.77   C245.777,258.061,215.064,237.098,204.696,249.673z"/>
+                                    <path d="M194.557,134.159c1.57,1.086,3.023,2.294,4.321,3.594c11.701,11.704,12.257,30.545,1.268,42.894   c-3.628,4.075-3.265,10.32,0.812,13.948c1.883,1.676,4.228,2.5,6.564,2.5c2.722,0,5.433-1.118,7.384-3.311   c17.939-20.155,17.038-50.903-2.052-70c-2.137-2.138-4.511-4.114-7.055-5.874c-4.49-3.105-10.643-1.982-13.746,2.504   C188.947,124.901,190.068,131.056,194.557,134.159z"/>
+                                    <path d="M223.182,104.255c1.684,1.411,3.3,2.89,4.804,4.393c27.904,27.903,28.559,72.235,1.491,100.926   c-3.744,3.969-3.563,10.223,0.406,13.967c1.91,1.801,4.346,2.693,6.778,2.693c2.624,0,5.245-1.04,7.188-3.1   c16.518-17.509,25.434-40.423,25.107-64.521c-0.329-24.149-9.917-46.856-27.001-63.939c-1.911-1.91-3.957-3.781-6.079-5.561   c-4.182-3.506-10.413-2.958-13.919,1.224C218.451,94.518,219,100.749,223.182,104.255z"/>
+                                    <path d="M265.279,60.118c-4.076-3.626-10.321-3.261-13.949,0.814c-3.627,4.077-3.262,10.322,0.814,13.949   c1.793,1.595,3.414,3.119,4.952,4.655c43.449,43.448,44.149,114.811,1.56,159.079c-3.783,3.932-3.662,10.187,0.27,13.97   c1.916,1.844,4.384,2.76,6.849,2.76c2.592,0,5.182-1.015,7.121-3.03c24.325-25.284,37.548-58.547,37.231-93.659   c-0.317-35.161-14.188-68.222-39.063-93.096C269.252,63.749,267.359,61.969,265.279,60.118z"/>
+                                    <path d="M313.002,0H82C36.785,0,0,36.784,0,81.998v230.993C0,358.211,36.785,395,82,395h231.002   C358.216,395,395,358.211,395,312.991V81.998C395,36.784,358.216,0,313.002,0z M380,312.991C380,349.94,349.944,380,313.002,380H82   c-36.944,0-67-30.06-67-67.009V81.998C15,45.056,45.056,15,82,15h231.002C349.944,15,380,45.056,380,81.998V312.991z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                                </g>
+                                </svg>
+                            <span>+254 723456477</span>
+                        </li>
+                        <li class="pl-4 pb-4">
+                            <svg class="w-5 fill-secondary inline-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 502 502" style="enable-background:new 0 0 502 502;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M493.741,60.661L333.074,32.246c-1.136-0.199-2.347-0.203-3.482,0L170.667,60.353L11.741,32.246     c-2.91-0.517-5.901,0.285-8.167,2.185C1.308,36.331,0,39.136,0,42.093v389.389c0,4.851,3.481,9.002,8.259,9.847l160.667,28.415     c1.12,0.249,2.358,0.187,3.482,0l158.925-28.107l158.926,28.107c0.579,0.103,1.162,0.153,1.741,0.153     c2.331,0,4.611-0.816,6.426-2.338c2.266-1.9,3.574-4.705,3.574-7.662V70.508C502,65.657,498.519,61.505,493.741,60.661z      M40.206,426.667L20,423.095V204.13c0.023-0.023,0.048-0.042,0.071-0.064l9.429-9.429l69.857,69.857l-28.429,28.429     c-3.905,3.905-3.905,10.237,0,14.143c1.953,1.953,4.512,2.929,7.071,2.929c2.559,0,5.118-0.976,7.071-2.929l75.596-75.596     v112.383l-32.957-34.289c-3.828-3.981-10.157-4.107-14.14-0.28c-3.981,3.827-4.107,10.157-0.28,14.139l14.771,15.367     l-87.632,87.632C40.349,426.501,40.282,426.586,40.206,426.667z M160.667,447.973l-96.445-17.057l77.702-77.702l18.743,19.502     V447.973z M160.667,203.185L113.5,250.352l-69.857-69.857L86,138.137l44.429,44.429c1.953,1.953,4.512,2.929,7.071,2.929     s5.118-0.976,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143l-44.429-44.429l14.929-14.929c3.905-3.905,3.905-10.237,0-14.143     c-3.906-3.905-10.236-3.905-14.143,0L20,175.852V54.017l140.667,24.877V203.185z M321.333,423.094l-140.666,24.878V373.4     l56.313-32.338c4.79-2.75,6.442-8.862,3.692-13.652c-2.749-4.789-8.861-6.443-13.651-3.692l-46.354,26.619V213.412l53.248-30.476     l87.418,169.134V423.094z M321.333,308.512l-70.044-135.519l70.044-40.088V308.512z M321.333,109.861l-140.666,80.507V78.894     l140.666-24.878V109.861z M482,447.972l-100.127-17.708l70.198-70.198c3.905-3.905,3.905-10.237,0-14.143     c-3.906-3.905-10.236-3.905-14.143,0l-79,79c-0.352,0.352-0.66,0.728-0.948,1.116l-16.647-2.944V54.017L482,78.894v109.958     l-90.071,90.071c-3.905,3.905-3.905,10.237,0,14.143c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.976,7.071-2.929l8.429-8.429     l67.5,67.5V447.972z M482,217.137v106.715l-53.357-53.357L482,217.137z"/>
+                                            <path d="M412.093,236.914c3.112,0,6.047-1.449,7.939-3.92c5.114-6.678,49.968-66.082,49.968-95.092     c0-31.93-25.978-57.907-57.907-57.907s-57.907,25.977-57.907,57.907c0,29.01,44.854,88.414,49.968,95.092     C406.046,235.465,408.98,236.914,412.093,236.914z M412.093,99.995C432.995,99.995,450,117,450,137.902     c0,14.439-20.808,48.267-37.907,72.182c-17.1-23.915-37.907-57.743-37.907-72.182C374.186,116.999,391.19,99.995,412.093,99.995z     "/>
+                                            <path d="M440.022,137.902c0-15.401-12.529-27.93-27.93-27.93s-27.931,12.529-27.931,27.93s12.529,27.93,27.931,27.93     C427.493,165.832,440.022,153.303,440.022,137.902z M412.093,145.832c-4.373,0-7.931-3.558-7.931-7.93     c0-4.373,3.558-7.93,7.931-7.93c4.372,0,7.93,3.558,7.93,7.93S416.465,145.832,412.093,145.832z"/>
+                                            <path d="M48.928,314.923l-10,10c-3.905,3.905-3.905,10.237,0,14.143c1.954,1.952,4.512,2.929,7.072,2.929     s5.118-0.976,7.071-2.929l10-10c3.905-3.905,3.905-10.237,0-14.143C59.165,311.018,52.835,311.018,48.928,314.923z"/>
+                                            <path d="M257.011,328.036c1.688,0,3.4-0.428,4.97-1.33l14-8.04c4.79-2.75,6.442-8.862,3.692-13.652     c-2.75-4.788-8.862-6.443-13.652-3.691l-14,8.04c-4.79,2.75-6.442,8.862-3.692,13.652     C250.178,326.235,253.546,328.036,257.011,328.036z"/>
+                                            <path d="M369.929,300.923l-9,9c-3.905,3.905-3.905,10.237,0,14.143c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.976,7.071-2.929     l9-9c3.905-3.905,3.905-10.237,0-14.143C380.165,297.018,373.835,297.018,369.929,300.923z"/>
+                                        </g>
+                                    </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                </svg>
+                            <span>14 GrandHouse</span>
+                        </li>
+                        <li class="pl-4 pb-4">
+                            <svg class="w-5 fill-secondary inline-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 488 488" style="enable-background:new 0 0 488 488;" xml:space="preserve">
+                                <g transform="translate(0 -540.36)">
+                                    <g>
+                                        <g>
+                                            <path d="M351.1,846.96l-97.1-67.9v-116.7c0-5.5-4.5-10-10-10s-10,4.5-10,10v122c0,3.3,1.6,6.3,4.3,8.2l101.4,70.9     c1.7,1.2,3.7,1.8,5.7,1.8v0c3.1,0,6.2-1.5,8.2-4.4C356.7,856.36,355.6,850.16,351.1,846.96z"/>
+                                            <path d="M416.4,611.96L416.4,611.96c-46.2-46.2-107.4-71.6-172.4-71.6s-126.2,25.4-172.4,71.6C25.4,658.16,0,719.36,0,784.36     s25.4,126.2,71.6,172.4c46.2,46.2,107.4,71.6,172.4,71.6s126.2-25.4,172.4-71.6s71.6-107.4,71.6-172.4S462.6,658.16,416.4,611.96     z M254,1008.16L254,1008.16v-40.8c0-5.5-4.5-10-10-10s-10,4.5-10,10v40.8c-115.6-5.1-208.7-98.2-213.8-213.8H61     c5.5,0,10-4.5,10-10s-4.5-10-10-10H20.2c5.1-115.6,98.2-208.7,213.8-213.8v40.8c0,5.5,4.5,10,10,10s10-4.5,10-10v-40.8     c115.6,5.1,208.7,98.2,213.8,213.8H427c-5.5,0-10,4.5-10,10s4.5,10,10,10h40.8C462.7,909.96,369.6,1003.06,254,1008.16z"/>
+                                        </g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                                </g>
+                                </svg>
+                            <span>8:00am - 5:00pm</span>
+                        </li>
+                        <li class="pl-4 pb-4">
+                            <svg class="w-5 fill-secondary inline-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M245,135c-60.654,0-110,49.346-110,110s49.346,110,110,110s110-49.346,110-110S305.654,135,245,135z M245,335     c-49.626,0-90-40.374-90-90c0-49.626,40.374-90,90-90c49.626,0,90,40.374,90,90C335,294.626,294.626,335,245,335z"/>
+                                            <path d="M355,90c-19.299,0-35,15.701-35,35s15.701,35,35,35s35-15.701,35-35S374.299,90,355,90z M355,140     c-8.272,0-15-6.729-15-15s6.728-15,15-15c8.272,0,15,6.729,15,15S363.272,140,355,140z"/>
+                                            <path d="M245,175c-38.598,0-70,31.402-70,70c0,38.598,31.402,70,70,70c38.598,0,70-31.402,70-70C315,206.402,283.598,175,245,175     z M245,295c-27.57,0-50-22.43-50-50s22.43-50,50-50s50,22.43,50,50S272.57,295,245,295z"/>
+                                            <path d="M340,45H150C94.86,45,50,89.86,50,145v195c0,55.14,44.86,100,100,100h190c55.141,0,100-44.86,100-100V145     C440,89.86,395.141,45,340,45z M420,340c0,44.112-35.888,80-80,80H150c-44.112,0-80-35.888-80-80V145c0-44.112,35.888-80,80-80     h190c44.112,0,80,35.888,80,80V340z"/>
+                                            <path d="M390,0H100C44.86,0,0,44.86,0,100v290c0,55.14,44.86,100,100,100h290c55.141,0,100-44.86,100-100V100     C490,44.86,445.141,0,390,0z M470,390c0,44.112-35.888,80-80,80H100c-44.112,0-80-35.888-80-80V100c0-44.112,35.888-80,80-80h290     c44.112,0,80,35.888,80,80V390z"/></g>
+                                    </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                                </g>
+                                </svg>
+                            <span>Instagram</span>
+                        </li>
+                        <li class="pl-4 pb-4">
+                            <svg class="w-5 fill-secondary inline-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
+                                <g id="XMLID_822_">
+                                    <path id="XMLID_823_" d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527   C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991   c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764   c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861   C204.394,157.263,202.325,160.684,199.021,162.41z"/>
+                                </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                                </g>
+                                </svg>
+                            <span>Youtube</span>
+                        </li>
+                    </ul>
+                </section>
             </section>
         </section>
     </main>
 
-    <div class="bg-main h-screen w-screen"></div>
+    <!-- <div class="bg-main h-screen w-screen mt-[400px]"></div> -->
 
 
 
@@ -161,82 +264,6 @@
 
 
 
-
-
-
-
-    <section class="main">
-
-        <section id="booking">
-            <h2 class="heading">Book a session</h2>
-            <section class="center">
-                <div>
-                    <div class="steps">
-                        <p class="step active center">1</p>
-                        <p class="step center">2</p>
-                    </div>
-                    <form class="booking-form">
-                        <div class="form-group active">
-                            <h3>Personal details</h3>
-                            <label for="name">Name</label>
-                            <input required type="text" id="name" placeholder="your name">
-                            <label for="email">Email</label>
-                            <input required type="email" id="email" placeholder="your email">
-                            <label for="phone">Phone no</label>
-                            <input required type="number" id="phone" placeholder="your number">
-                            <div class="btns"><button class="btn center next">
-                                    Next
-                                    <span class="center">
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.296 7.71 14.621 12l-4.325 4.29 1.408 1.42L17.461 12l-5.757-5.71z"></path><path d="M6.704 6.29 5.296 7.71 9.621 12l-4.325 4.29 1.408 1.42L12.461 12z"></path></svg>
-                                    </span>
-        </button>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <h3>Shoot details</h3>
-                            <label for="type">Type</label>
-                            <select name="type" id="">
-                                    <option value="">--Select type --</option>
-                                    <option value="photo">Photoshoot</option>
-                                    <option value="video">Videoshoot</option>
-                                </select>
-                            <label for="duration">Duration</label>
-                            <input type="number" id="duration" placeholder="shoot duration">
-                            <label for="location">Location</label>
-                            <input type="number" id="location" placeholder="shoot location">
-                            <label for="people">No of people</label>
-                            <input type="number" id="people" placeholder="how many people will participate?">
-                            <div class="btns">
-                                <button class="btn center prev">
-                                        <span class="center"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m12.707 7.707-1.414-1.414L5.586 12l5.707 5.707 1.414-1.414L8.414 12z"></path><path d="M16.293 6.293 10.586 12l5.707 5.707 1.414-1.414L13.414 12l4.293-4.293z"></path></svg></span>
-                                        Previous
-                                    </button>
-                                <button class="btn">Book</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </section>
-    </section>
-    <footer id="contacts" class="center">
-        <div>
-            <section class="socials">
-                <h1>photo<span>Lab</span></h1>
-                <article>
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
-                </article>
-            </section>
-            <form class="subscription">
-                <h3>Subscribe to our newsletter</h3>
-                <input type="email" placeholder="enter your email">
-                <button class="subscribe btn">Subscribe</button>
-            </form>
-        </div>
-    </footer>
     </main>
 </body>
 

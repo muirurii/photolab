@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
+    .open-menu {
+        @apply opacity-100;
+        transform: unset;
+        border-radius: unset;
+    }
     .main-menu li::before {
         height: 1px;
         background-color: #fff;
@@ -16,18 +21,6 @@
         to {
             color: var(--text);
             transform: scale(1) rotateZ(0deg);
-        }
-    }
-    .hero-image {
-        animation: image 700ms 1s ease-in-out forwards;
-    }
-    @keyframes image {
-        70% {
-            @apply bottom-4;
-        }
-        100% {
-            @apply bottom-10;
-            transform: unset;
         }
     }
     .reveal {

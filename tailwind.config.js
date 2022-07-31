@@ -16,8 +16,14 @@ module.exports = {
                 headline: ["Bebas Neue", "cursive"],
             },
             height: {
-                hero: "calc(100vh - 80px)",
+                hero: "calc(100vh - 70px)",
             },
+            minHeight: {
+                hero: "calc(100vh - 70px)",
+            },
+            translate: {
+                menuHide: "calc(100% + 70px)",
+            }
         },
     },
     plugins: [],

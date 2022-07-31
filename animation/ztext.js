@@ -173,12 +173,12 @@ if (
         "ztext is disabled because transform-style: preserve-3d; is unsupported"
     );
 
-var ztxt = new Ztextify(".z-t", {
+var ztxt = new Ztextify(".z-text", {
     depth: "30px",
-    layers: 5,
+    layers: 10,
     fade: true,
     direction: "forwards",
     event: "pointer",
     eventRotation: "10deg",
-    perspective: "2000px",
+    perspective: "800px",
 });
