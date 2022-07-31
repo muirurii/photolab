@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
-    .main-menu li:hover>span {
-        /* background-color: theme(colors.fade) */
-    }
     .main-menu li::before {
+        height: 1px;
+        background-color: #fff;
         transition: transform 300ms, opacity 300ms 0ms ease-in;
     }
-    .intro p span {
+    .fade-text {
+        color: rgba(204, 204, 204, 0);
         transform: scale(0.5) rotateZ(20deg);
         animation: text 200ms linear forwards;
     }
@@ -17,5 +17,28 @@
             color: var(--text);
             transform: scale(1) rotateZ(0deg);
         }
+    }
+    .hero-image {
+        animation: image 700ms 1s ease-in-out forwards;
+    }
+    @keyframes image {
+        70% {
+            @apply bottom-4;
+        }
+        100% {
+            @apply bottom-10;
+            transform: unset;
+        }
+    }
+    .reveal {
+        transform: unset;
+    }
+    .reveal img {
+        @apply animate-bounce;
+        animation-iteration-count: 0.5;
+    }
+    .show-service {
+        opacity: 1;
+        transform: unset;
     }
 }

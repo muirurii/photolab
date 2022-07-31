@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="[scroll-behavior:smooth]">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+VIC+WA+NT+Beginner&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
     <script src="../animation/ztext.js" defer></script>
+    <script src="../animation/anime.js" defer></script>
     <link href="output.css" rel="stylesheet">
     <title>photoLab</title>
 </head>
 
-<body class="font-main bg-main text-text">
-    <header class="h-[80px] fixed top-0 z-30 px-4 bg-secondary flex items-center w-screen">
-        <h1 class="font-logo text-3xl pr-12">photo<span class="text-main">Lab</span></h1>
-        <nav>
-            <ul class="flex items-center justify-center font-light  h-16 main-menu">
+<body class="font-mFont bg-white text-text">
+    <header class="h-[70px] bg-white fixed top-0 z-30 flex items-center justify-between w-screen">
+        <div class="flex items-center w-full">
+            <h1 class="font-logo text-3xl pl-4">photo<span class="text-secondary">Lab</span></h1>
+            <svg class="stroke-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 128 128" height="40px" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve"><path clip-rule="evenodd" d="  M90.944,31.962h11.707c8.936,0,16.18,7.244,16.18,16.179v44.763c0,8.936-7.244,16.179-16.18,16.179H25.349  c-8.936,0-16.179-7.244-16.179-16.179V48.141c0-8.936,7.244-16.179,16.179-16.179h11.707H90.944z" fill="none" fill-rule="evenodd" stroke="#000000" stroke-miterlimit="10" stroke-width="3"/><g><g><path d="M103.115,70.523c-0.146,11.971-7.966,22.438-19.496,25.781c-11.565,3.353-23.914-2.125-29.987-12.287    c-6.196-10.366-4.138-23.86,4.152-32.399c8.385-8.637,21.871-10.094,32.179-4.18C98.171,52.147,103.001,61.176,103.115,70.523    c0.023,1.933,3.023,1.936,3,0c-0.135-11.018-6.086-21.05-15.789-26.318c-9.726-5.28-21.921-4.244-30.879,2.08    C50.57,52.551,45.825,63.67,47.272,74.411c1.467,10.886,8.733,19.908,18.893,23.949c9.051,3.6,19.638,1.957,27.509-3.599    c7.848-5.538,12.325-14.712,12.441-24.238C106.139,68.587,103.139,68.59,103.115,70.523z"/></g></g><g><g><path d="M90.096,70.523c-0.168,7.519-5.99,13.462-13.536,13.633c-7.545,0.171-13.372-6.373-13.534-13.633    c-0.168-7.518,6.242-13.468,13.534-13.633C84.104,56.719,89.934,63.262,90.096,70.523c0.043,1.932,3.043,1.936,3,0    c-0.205-9.167-7.342-16.425-16.536-16.633c-9.192-0.208-16.337,7.78-16.535,16.633c-0.205,9.167,7.649,16.432,16.535,16.633    c9.193,0.208,16.339-7.778,16.536-16.633C93.139,68.587,90.139,68.591,90.096,70.523z"/></g></g><g><g><path d="M31.329,46.546c-0.254,4.719-7.066,4.719-7.32,0C23.754,41.824,31.076,41.849,31.329,46.546c0.104,1.924,3.104,1.934,3,0    c-0.203-3.766-2.894-6.458-6.66-6.66c-3.758-0.203-6.474,3.199-6.661,6.66c-0.202,3.758,3.2,6.474,6.661,6.66    c3.757,0.202,6.473-3.2,6.66-6.66C34.433,44.612,31.433,44.622,31.329,46.546z"/></g></g><g><g><path d="M91.518,17.417c-8.881,0-17.763,0-26.644,0c-0.719,0-1.201,0.469-1.446,1.101c-1.685,4.349-3.37,8.697-5.055,13.045    c-0.359,0.926,0.546,1.899,1.446,1.899c11.97,0,23.941,0,35.911,0c0.943,0,1.748-0.963,1.446-1.899    c-1.404-4.348-2.808-8.697-4.212-13.045c-0.592-1.833-3.489-1.049-2.893,0.798c1.404,4.348,2.808,8.697,4.212,13.045    c0.482-0.633,0.964-1.266,1.446-1.899c-11.97,0-23.94,0-35.911,0c0.482,0.633,0.964,1.266,1.446,1.899    c1.685-4.349,3.371-8.697,5.055-13.045c-0.482,0.367-0.964,0.734-1.446,1.101c8.881,0,17.763,0,26.644,0    C93.452,20.417,93.452,17.417,91.518,17.417z"/></g></g><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="7.292" stroke="#000000" stroke-miterlimit="10" stroke-width="3" width="12.944" x="26.357" y="24.67"/></svg>
+        </div>
+        <nav class="bg-secondary h-full w-[403px] px-4 flex items-center">
+            <ul class="flex items-center justify-center font-ligh h-16 main-menu">
                 <a href="#">
-                    <li class="relative before:bg-white before:h-[1px] before:absolute before:left-1/2 before:-bottom-[-2px] before:-translate-x-1/2 before:opacity-0 before:-translate-y-8 before:bg-secondary before:w-7 hover:before:opacity-100 hover:before:translate-y-0 hover:before:top-auto hover">
-                        <span class="text-sm px-2">Home</span>
+                    <li class="relative transition-color text-white hover:text-text before:bg-text before:h-[1px] before:absolute before:left-1/2 before:-bottom-[1px] before:-translate-x-1/2 before:opacity-0 before:-translate-y-4 before:bg-main before:w-7 hover:before:opacity-100 hover:before:translate-y-0 hover:before:top-100%">
+                        <span class="text-sm px-2">home</span>
                 </a>
                 <a href="#gallery">
-                    <li class="relative before:bg-white before:h-[1px] before:absolute before:left-1/2 before:-bottom-[-2px] before:-translate-x-1/2 before:opacity-0 before:-translate-y-8 before:bg-secondary before:w-7 hover:before:opacity-100 hover:before:translate-y-0 hover:before:top-auto hover">
-                        <span class="text-sm px-2">Gallery</span>
+                    <li class="relative transition-color text-white hover:text-text before:bg-text before:h-[1px] before:absolute before:left-1/2 before:-bottom-[1px] before:-translate-x-1/2 before:opacity-0 before:-translate-y-4 before:bg-main before:w-7 hover:before:opacity-100 hover:before:translate-y-0 hover:before:top-100%">
+                        <span class="text-sm px-2">gallery</span>
                 </a>
-                <a href="#pricing">
-                    <li class="relative before:bg-white before:h-[1px] before:absolute before:left-1/2 before:-bottom-[-2px] before:-translate-x-1/2 before:opacity-0 before:-translate-y-8 before:bg-secondary before:w-7 hover:before:opacity-100 hover:before:translate-y-0 hover:before:top-auto hover">
-                        <span class="text-sm px-2">Pricing</span>
+                <a href="#services">
+                    <li class="relative transition-color text-white hover:text-text before:bg-text before:h-[1px] before:absolute before:left-1/2 before:-bottom-[1px] before:-translate-x-1/2 before:opacity-0 before:-translate-y-4 before:bg-main before:w-7 hover:before:opacity-100 hover:before:translate-y-0 hover:before:top-100%">
+                        <span class="text-sm px-2">services</span>
                 </a>
                 <a href="#booking">
-                    <li class="relative before:bg-white before:h-[1px] before:absolute before:left-1/2 before:-bottom-[-2px] before:-translate-x-1/2 before:opacity-0 before:-translate-y-8 before:bg-secondary before:w-7 hover:before:opacity-100 hover:before:translate-y-0 hover:before:top-auto hover">
-                        <span class="text-sm px-2">Booking</span>
+                    <li class="relative transition-color text-white hover:text-text before:bg-text before:h-[1px] before:absolute before:left-1/2 before:-bottom-[1px] before:-translate-x-1/2 before:opacity-0 before:-translate-y-4 before:bg-main before:w-7 hover:before:opacity-100 hover:before:translate-y-0 hover:before:top-100%">
+                        <span class="text-sm px-2">booking</span>
                 </a>
             </ul>
         </nav>
@@ -42,232 +45,198 @@
     <main>
         <section class="relative h-hero mt-[80px]">
             <article class="flex flex-col justify-center h-full pl-12 intro z-10 relative">
-                <h1 class="text-secondary font-headline text-6xl z-t">
-                    PHOTOGRAPHY AT <br/> ITS BEST.
+                <h1 class="font-headline text-6xl">
+                    INCH PERFECT<br/>
+                    <span class="text-secondary z-t">PHOTOGRAPHY</span> AND <br/> <span class="text-secondary z-t">EDITING</span> SERVICES
                 </h1>
-                <p></p>
-                <button class="bg-secondary rounded text-main w-fit mt-8 py-3 px-6">Get started</button>
+                <p class="mt-4"></p>
+                <button class="bg-secondary rounded text-white text-sm w-fit mt-8 py-3 px-6 border border-secondary transition-all hover:text-text hover:bg-white">Get started</button>
             </article>
-            <img src="https://images.pexels.com/photos/464181/pexels-photo-464181.jpeg?auto=compress&cs=tinysrgb&w=600" alt="HERO IMAGE" class="absolute bottom-10 right-14 h-[450px] w-[508px]">
+            <img class="absolute bottom-4 [transform:rotateY(90deg)] -translate-x-48 right-14 h-[450px] w-[508px] hero-image" src="https://images.pexels.com/photos/464181/pexels-photo-464181.jpeg?auto=compress&cs=tinysrgb&w=600" alt="HERO IMAGE">
             <div class="bg-secondary w-[300px] h-screen absolute right-0 top-[-80px] -z-10"></div>
         </section>
-
-
-        <section class="intro center" id="#">
-            <article class="intro-text">
-                <h2>PHOTOGRAPHY REDEFINED</h2>
-                <p></p>
-                <button class="cta br">Get a shoot</button>
-            </article>
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 8c-2.168 0-4 1.832-4 4s1.832 4 4 4 4-1.832 4-4-1.832-4-4-4zm0 6c-1.065 0-2-.935-2-2s.935-2 2-2 2 .935 2 2-.935 2-2 2z"></path><path d="M20 5h-2.586l-2.707-2.707A.996.996 0 0 0 14 2h-4a.996.996 0 0 0-.707.293L6.586 5H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 18V7h3c.266 0 .52-.105.707-.293L10.414 4h3.172l2.707 2.707A.996.996 0 0 0 17 7h3l.002 11H4z"></path></svg>
+        <section id="gallery" class="pt-20">
+            <h1 class="text-3xl pl-4 pb-8">Gallery</h1>
+            <section class="grid grid-cols-3 ">
+                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all hover:border-secondary border-double hover:border-4" src="https://images.pexels.com/photos/9876711/pexels-photo-9876711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[800px] row-span-2"><img class="h-full w-full transition-all hover:border-secondary border-double hover:border-4" src="https://images.pexels.com/photos/1777843/pexels-photo-1777843.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all hover:border-secondary border-double hover:border-4" src="https://images.pexels.com/photos/4262410/pexels-photo-4262410.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[800px] row-span-2"><img class="h-full w-full transition-all hover:border-secondary border-double hover:border-4" src="https://images.pexels.com/photos/965324/pexels-photo-965324.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all hover:border-secondary border-double hover:border-4" src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all hover:border-secondary border-double hover:border-4" src="https://images.pexels.com/photos/10668002/pexels-photo-10668002.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all hover:border-secondary border-double hover:border-4" src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+            </section>
         </section>
-        <section class="main">
-            <section id="gallery">
-                <h2 class="heading">Gallery</h2>
-                <section class="gallery">
-                    <article class="image span-1-3-row">
-                        <img src="./images/pexels-photo-1737957.jpeg" alt="">
-                        <button class="zoom-in"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 6H9v3H6v2h3v3h2v-3h3V9h-3z"></path><path d="M10 2c-4.411 0-8 3.589-8 8s3.589 8 8 8a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"></path></svg></button>
-                    </article>
-                    <article class="image">
-                        <img src="./images/pexels-photo-295826.jpeg" alt="">
-                        <button class="zoom-in"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 6H9v3H6v2h3v3h2v-3h3V9h-3z"></path><path d="M10 2c-4.411 0-8 3.589-8 8s3.589 8 8 8a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"></path></svg></button>
-                    </article>
-                    <article class="image">
-                        <img src="./images/pexels-photo-209151.jpeg" alt="">
-                        <button class="zoom-in"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 6H9v3H6v2h3v3h2v-3h3V9h-3z"></path><path d="M10 2c-4.411 0-8 3.589-8 8s3.589 8 8 8a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"></path></svg></button>
-                    </article>
-                    <article class="image">
-                        <img src="./images/pexels-photo-1737957.jpeg" alt="">
-                        <button class="zoom-in"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 6H9v3H6v2h3v3h2v-3h3V9h-3z"></path><path d="M10 2c-4.411 0-8 3.589-8 8s3.589 8 8 8a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"></path></svg></button>
-                    </article>
-                    <article class="image">
-                        <img src="./images/pexels-photo-295826.jpeg" alt="">
-                        <button class="zoom-in"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 6H9v3H6v2h3v3h2v-3h3V9h-3z"></path><path d="M10 2c-4.411 0-8 3.589-8 8s3.589 8 8 8a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"></path></svg></button>
-                    </article>
-                    <article class="image">
-                        <img src="./images/pexels-photo-3184292.jpeg" alt="">
-                        <button class="zoom-in"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 6H9v3H6v2h3v3h2v-3h3V9h-3z"></path><path d="M10 2c-4.411 0-8 3.589-8 8s3.589 8 8 8a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"></path></svg></button>
-                    </article>
-                    <article class="image">
-                        <img src="./images/pexels-photo-931887.jpeg" alt="">
-                        <button class="zoom-in"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 6H9v3H6v2h3v3h2v-3h3V9h-3z"></path><path d="M10 2c-4.411 0-8 3.589-8 8s3.589 8 8 8a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"></path></svg></button>
-                    </article>
-                    <article class="image span-2-4-row">
-                        <img src="./images/pexels-photo-3184465.webp" alt="">
-                        <button class="zoom-in"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 6H9v3H6v2h3v3h2v-3h3V9h-3z"></path><path d="M10 2c-4.411 0-8 3.589-8 8s3.589 8 8 8a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"></path></svg></button>
-                    </article>
-                    <article class="image span-2-4-column">
-                        <img src="./images/pexels-photo-209151.jpeg" alt="">
-                        <button class="zoom-in"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 6H9v3H6v2h3v3h2v-3h3V9h-3z"></path><path d="M10 2c-4.411 0-8 3.589-8 8s3.589 8 8 8a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"></path></svg></button>
-                    </article>
-                </section>
-                <section class="zoomed">
-                    <button class="zoom-out">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M6 9h8v2H6z"></path><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
-                    </button>
-                    <img src="" alt="Photo">
-                </section>
+        <section class="pt-20" id="services">
+            <h1 class="text-3xl pl-4 pb-8">Services</h1>
+            <section class="flex justify-evenly items-start p-4">
+                <article class="opacity-0 transition-all scale-0 duration-700 basis-80 p-2 bg-white relative before:absolute before:-top-3 before:-left-3 before:h-12 before:w-12 before:border-main before:border-t-4 before:border-l-4 before:rounded-tl-md after:absolute after:w-12 after:h-12 after:-bottom-3 after:-right-3 after:border-main after:border-b-4 after:border-r-4 after:rounded-br-md hover:before:border-secondary hover:after:border-secondary hover:before:[transform:rotateZ(360deg)] hover:after:[transform:rotateZ(-360deg)] before:-z-10 after:-z-10 before:transition-all before:duration-500 after:transition-all after:duration-500">
+                    <h2 class="pb-2 text-secondary">Portrait Photography</h2>
+                    <p>
+                        Aims to capture the personality and mood of an individual or group. Images may be candid or posed, full body or close-ups. headshots.
+                    </p>
+                    <p>
+                        Photography portraits include senior portraits, family portraits, engagement photos, and professional
+                    </p>
+                    <svg width="200px" height="100px" class="absolute z-10 opacity-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 480 480"
+                        style="enable-background:new 0 0 480 480;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <g>
+                                    <path d="M158.801,223.903c2.594,9.058,10.898,32.088,31.182,46.224l-0.3,15.949c-19.329,6.437-74.239,25.182-97.5,37.935     c-2.087,1.144-3.697,2.995-4.541,5.22c-0.788,2.075-19.2,51.253-11.157,88.098c1.003,4.593,5.069,7.867,9.77,7.867h307.266     c4.699,0,8.764-3.271,9.769-7.861c8.04-36.721-8.996-85.777-9.725-87.847c-0.817-2.32-2.461-4.258-4.617-5.443     c-23.061-12.669-74.724-31.526-93.284-38.151v-16.052c14.154-14.143,23.933-37.174,27.071-45.224     c6.943-5.642,25.121-22.62,25.121-45.726c0-16.123-7.03-24.187-15.279-26.985c1.671-18.179,1.728-54.269-19.256-79.817     c-14.985-18.245-37.465-27.496-66.813-27.496H234.16c-29.349,0-51.804,9.25-66.743,27.493     c-20.82,25.426-20.763,61.295-19.061,79.569c-8.02,2.698-14.887,10.619-14.887,26.563     C133.47,200.891,151.386,217.854,158.801,223.903z M318.323,315.551c19.813,7.506,43.223,16.854,57.553,24.199     c3.205,10.293,11.674,40.538,9.114,65.445H94.817c-2.393-24.93,6.88-55.266,10.302-65.393     c12.283-6.221,31.848-13.86,50.242-20.576c8.363,8.724,36.747,35.034,76.216,36.632c1.262,0.051,2.522,0.077,3.78,0.077     c28.445,0,55.919-13.06,81.718-38.861C317.549,316.599,317.964,316.088,318.323,315.551z M154.843,170.583     c0.075-0.013,0.197-0.027,0.375-0.027c0.449,0,0.889,0.089,1.115,0.147c3.387,1.435,7.058,0.793,9.931-1.52     c2.905-2.34,4.023-6.202,3.288-9.859c-0.094-0.468-9.151-47.101,13.341-74.568c10.956-13.38,28.206-20.164,51.269-20.164h12.346     c23.042,0,40.305,6.773,51.31,20.132c22.517,27.332,13.704,74.174,13.615,74.629c-0.709,3.579,0.34,7.35,3.135,9.694     c2.763,2.317,6.315,3.052,9.681,1.793c0.183-0.039,0.578-0.11,1.043-0.11c0.182,0,0.791,0.015,0.976,0.204     c0.59,0.604,1.589,2.958,1.589,7.956c0,17.479-19.057,31.241-19.222,31.359c-1.697,1.19-2.985,2.885-3.68,4.838     c-2.975,8.357-13.4,32.326-25.739,42.739c-2.251,1.9-3.55,4.696-3.55,7.642v27.492c0,4.253,2.69,8.041,6.705,9.442     c0.204,0.071,6.25,2.186,15.363,5.503c-21.168,19.408-43.061,28.827-65.175,27.974c-25.05-0.956-45.262-14.919-56.019-24.192     c14.874-5.17,25.816-8.734,26.1-8.827c4.055-1.317,6.829-5.06,6.909-9.323l0.539-28.675c0.069-3.679-1.888-7.099-5.094-8.903     c-21.355-12.015-27.524-39.679-27.578-39.927c-0.518-2.481-1.985-4.692-4.057-6.151c-0.199-0.14-19.885-14.206-19.885-31.666     C153.47,172.78,154.578,170.943,154.843,170.583z"/>
+                                    <path d="M39.993,69.998c5.523,0,10-4.477,10-10V20h40.006c5.523,0,10-4.477,10-10s-4.477-10-10-10H39.993     c-5.523,0-10,4.477-10,10v49.998C29.993,65.521,34.47,69.998,39.993,69.998z"/>
+                                    <path d="M440.007,0h-50.006c-5.523,0-10,4.477-10,10s4.477,10,10,10h40.006v39.998c0,5.523,4.477,10,10,10s10-4.477,10-10V10     C450.007,4.477,445.53,0,440.007,0z"/>
+                                    <path d="M89.999,460H49.993v-39.998c0-5.523-4.477-10-10-10c-5.523,0-10,4.477-10,10V470c0,5.523,4.477,10,10,10h50.006     c5.523,0,10-4.477,10-10S95.522,460,89.999,460z"/>
+                                    <path d="M440.007,410.002c-5.523,0-10,4.477-10,10V460h-40.006c-5.523,0-10,4.477-10,10s4.477,10,10,10h50.006     c5.523,0,10-4.477,10-10v-49.998C450.007,414.479,445.53,410.002,440.007,410.002z"/>
+                                </g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                        </svg>
+                    <button class="py-[10px] px-7 bg-secondary text-white rounded-sm mt-3 text-sm hover:opacity-80">Book</button>
+                </article>
+                <article class="lg:mt-12 opacity-0 transition-all scale-0 duration-700 basis-80 p-2 bg-white relative before:absolute before:-top-3 before:-left-3 before:h-12 before:w-12 before:border-main before:border-t-4 before:border-l-4 before:rounded-tl-md after:absolute after:w-12 after:h-12 after:-bottom-3 after:-right-3 after:border-main after:border-b-4 after:border-r-4 after:rounded-br-md hover:before:border-secondary hover:after:border-secondary hover:before:[transform:rotateZ(360deg)] hover:after:[transform:rotateZ(-360deg)] before:-z-10 after:-z-10 before:transition-all before:duration-500 after:transition-all after:duration-500">
+                    <h2 class="pb-2 text-secondary">Fashion Photography </h2>
+                    <p>
+                        Fashion photography showcases and glamorizes fashion clothing, shoes, and accessories to make them more desirable to consumers.
+                    </p>
+                    <p>
+                        It takes a lot of full body shots and work in an array of locations, from fashion shows to studios with full lighting setups to city streets and open fields.
+                    </p>
+                    <svg width="200px" height="100px" class="absolute z-10 opacity-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.477 512.477"
+                        style="enable-background:new 0 0 512.477 512.477;" xml:space="preserve">
+                        <g transform="translate(1 1)">
+                            <g>
+                                <g>
+                                    <path d="M510.646,366.172c-1.707-10.24-8.533-19.627-17.067-26.453L290.486,186.087v-44.342c0-12.8-10.24-23.04-23.04-23.04     h-3.413v-17.92c23.893-4.267,42.667-24.747,42.667-50.347c0-28.16-23.04-51.2-51.2-51.2c-28.16,0-51.2,23.04-51.2,51.2     c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533c0-18.773,15.36-34.133,34.133-34.133     c18.773,0,34.133,15.36,34.133,34.133s-15.36,34.133-34.133,34.133c-5.12,0-8.533,4.267-8.533,9.387v24.747h-2.56     c-12.8,0-23.04,10.24-23.04,23.04v43.051l-204.8,154.923c-9.387,6.827-15.36,16.213-17.067,26.453     c-1.707,12.8,0.853,25.6,9.387,35.84c8.533,9.387,20.48,15.36,33.28,15.36h76.8v73.387c0,11.093,9.387,20.48,20.48,20.48h232.107     c11.093,0,20.48-9.387,20.48-20.48v-73.387h76.8c12.8,0,24.747-5.973,32.427-15.36     C509.793,391.772,513.206,378.972,510.646,366.172z M237.579,141.745c0-3.413,2.56-5.973,5.973-5.973h7.912     c1.169,0.55,2.525,0.853,4.035,0.853c1.366,0,2.605-0.311,3.695-0.853h7.398c3.413,0,5.973,2.56,5.973,5.973v30.72l-9.387-7.68     c-2.175-1.74-5.016-2.588-7.956-2.554c-0.83-0.011-1.659,0.073-2.477,0.241c-2.013,0.362-4,1.126-5.78,2.313l-9.387,7.68V141.745     z M371.552,340.572H139.446c-11.093,0-20.48,9.387-20.48,20.48v5.12h-51.2l187.733-142.507l187.733,142.507h-51.2v-5.12     C392.032,349.959,382.646,340.572,371.552,340.572z M374.966,451.505h-34.133c-5.12,0-8.533,3.413-8.533,8.533     c0,5.12,3.413,8.533,8.533,8.533h34.133v22.187c0,1.707-1.707,3.413-3.413,3.413H139.446c-1.707,0-3.413-1.707-3.413-3.413     v-22.187h34.133c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533h-34.133v-34.133v-56.32     c0-1.707,1.707-3.413,3.413-3.413h232.107c1.707,0,3.413,1.707,3.413,3.413v56.32V451.505z M488.459,390.919     c-5.12,5.973-11.947,9.387-19.627,9.387h-76.8v-17.067h76.8h5.973l3.413-12.8l-219.307-166.4h-6.827l-212.48,161.28     c-3.413,2.56-5.12,6.827-3.413,11.093s5.12,6.827,9.387,6.827h73.387v17.067h-76.8c-7.68,0-14.507-3.413-19.627-9.387     c-5.12-5.973-6.827-13.653-5.12-21.333c0.853-5.973,4.267-11.947,10.24-16.213l202.71-153.361l25.549-18.695l227.42,172.056     c5.12,4.267,9.387,10.24,10.24,16.213C495.286,377.265,493.579,384.945,488.459,390.919z"/>
+                                    <path d="M298.166,451.505h-76.8c-5.12,0-8.533,3.413-8.533,8.533c0,5.12,3.413,8.533,8.533,8.533h76.8     c5.12,0,8.533-3.413,8.533-8.533C306.699,454.919,303.286,451.505,298.166,451.505z"/>        </g>    </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                        </svg>
+                    <button class="py-[10px] px-7 bg-secondary text-white rounded-sm mt-3 text-sm hover:opacity-80">Book</button>
+                </article>
+                <article class="opacity-0 transition-all scale-0 duration-700 basis-80 p-2 bg-white relative before:absolute before:-top-3 before:-left-3 before:h-12 before:w-12 before:border-main before:border-t-4 before:border-l-4 before:rounded-tl-md after:absolute after:w-12 after:h-12 after:-bottom-3 after:-right-3 after:border-main after:border-b-4 after:border-r-4 after:rounded-br-md hover:before:border-secondary hover:after:border-secondary hover:before:[transform:rotateZ(360deg)] hover:after:[transform:rotateZ(-360deg)] before:-z-10 after:-z-10 before:transition-all before:duration-500 after:transition-all after:duration-500">
+                    <h2 class="pb-2 text-secondary">Architectural Photography</h2>
+                    <p>
+                        This genre encompasses diverse structures. Often, the photograph showcases the structure’s most aesthetically pleasing parts, such as a particular beam or archway.
+                    </p>
+                    <p>
+                        Architectural photographs can be of value to designers, architects, leasing companies, and building investors.
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200px" height="100px" class="absolute z-10 opacity-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g data-name="Layer 23" id="Layer_23"><rect class="cls-1" height="4" width="60" x="2" y="58"/><polyline class="cls-1" points="4 58 4 38 60 38 60 58"/><line class="cls-1" x1="18" x2="18" y1="38" y2="58"/><line class="cls-1" x1="46" x2="46" y1="38" y2="58"/><polyline class="cls-1" points="24 58 24 42 40 42 40 58"/><line class="cls-1" x1="32" x2="32" y1="42" y2="58"/><rect class="cls-1" height="4" width="60" x="2" y="34"/><polyline class="cls-1" points="46 12 46 34 18 34 18 12"/><polyline class="cls-1" points="18 22 6 22 6 34"/><rect class="cls-1" height="4" width="14" x="4" y="18"/><polyline class="cls-1" points="46 22 58 22 58 34"/><rect class="cls-1" height="4" transform="translate(106 40) rotate(180)" width="14" x="46" y="18"/><rect class="cls-1" height="4" width="4" x="10" y="26"/><rect class="cls-1" height="4" width="4" x="50" y="26"/><rect class="cls-1" height="12" width="6" x="8" y="42"/><rect class="cls-1" height="12" width="6" x="50" y="42"/><line class="cls-1" x1="8" x2="14" y1="48" y2="48"/><line class="cls-1" x1="50" x2="56" y1="48" y2="48"/><polyline class="cls-1" points="36 16 42 16 42 26 22 26 22 16 28 16"/><line class="cls-1" x1="27" x2="31" y1="23" y2="19"/><line class="cls-1" x1="33" x2="37" y1="23" y2="19"/><polyline class="cls-1" points="28.63 12 14 12 14 8 26.57 8"/><polyline class="cls-1" points="37.44 8 50 8 50 12 35.63 12"/><path class="cls-1" d="M38,4h0a14.5,14.5,0,0,1-4.24,10.24L32,16l-1.76-1.76A14.5,14.5,0,0,1,26,4h0l6-2Z"/></g></svg>
+                    <button class="py-[10px] px-7 bg-secondary text-white rounded-sm mt-3 text-sm hover:opacity-80">Book</button>
+                </article>
             </section>
-            <section id="pricing">
-                <h2 class="heading">Pricing</h2>
-                <section class="pricing">
-                    <article class="package">
-                        <p>Basic</p>
-                        <h4>$99</h4>
-                        <div class="center">
-                            <ul>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    50 photos
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Editing
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Framing
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Framing
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Framing
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="package">
-                        <p>Premium</p>
-                        <h4>$219</h4>
-                        <div class="center">
-                            <ul>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    300 photos
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Editing
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Framing
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Lonsectetur
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Lonsectetur
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Lonsectetur
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Lonsectetur
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="package">
-                        <p>Unlimited</p>
-                        <h4>$419</h4>
-                        <div class="center">
-                            <ul>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Unlimited photos
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Editing
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Framing
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Lonsectetur.
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Lonsectetur.
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Lonsectetur.
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Lonsectetur.
-                                </li>
-                                <li>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path></svg>                                    Load ipisicing.
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                </section>
-            </section>
-            <section id="booking">
-                <h2 class="heading">Book a session</h2>
-                <section class="center">
+        </section>
+        <section class="pt-8">
+            <h1 class="pb-4 text-text text-3xl pl-4">Booking</h1>
+            <section>
+                <form class="bg-gray-300 pl-4">
                     <div>
-                        <div class="steps">
-                            <p class="step active center">1</p>
-                            <p class="step center">2</p>
-                        </div>
-                        <form class="booking-form">
-                            <div class="form-group active">
-                                <h3>Personal details</h3>
-                                <label for="name">Name</label>
-                                <input required type="text" id="name" placeholder="your name">
-                                <label for="email">Email</label>
-                                <input required type="email" id="email" placeholder="your email">
-                                <label for="phone">Phone no</label>
-                                <input required type="number" id="phone" placeholder="your number">
-                                <div class="btns"><button class="btn center next">
+
+                    </div>
+                    <input type="text" class="block border-b-2 border-b-secondary" placeholder="Name">
+                    <input type="email" class="block border-b-2 border-b-secondary" placeholder="Email">
+                    <div class="service-type">
+                        <label for="">Photography type</label>
+                        <input type="radio" name="service-type" value="Portrait" id="">
+                        <input type="radio" name="service-type" value="Fashion" id="">
+                        <input type="radio" name="service-type" value="Architectural" id="">
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <div class="bg-main h-screen w-screen"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="main">
+
+        <section id="booking">
+            <h2 class="heading">Book a session</h2>
+            <section class="center">
+                <div>
+                    <div class="steps">
+                        <p class="step active center">1</p>
+                        <p class="step center">2</p>
+                    </div>
+                    <form class="booking-form">
+                        <div class="form-group active">
+                            <h3>Personal details</h3>
+                            <label for="name">Name</label>
+                            <input required type="text" id="name" placeholder="your name">
+                            <label for="email">Email</label>
+                            <input required type="email" id="email" placeholder="your email">
+                            <label for="phone">Phone no</label>
+                            <input required type="number" id="phone" placeholder="your number">
+                            <div class="btns"><button class="btn center next">
                                     Next
                                     <span class="center">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.296 7.71 14.621 12l-4.325 4.29 1.408 1.42L17.461 12l-5.757-5.71z"></path><path d="M6.704 6.29 5.296 7.71 9.621 12l-4.325 4.29 1.408 1.42L12.461 12z"></path></svg>
                                     </span>
         </button>
-                                </div>
                             </div>
-                            <div class="form-group">
-                                <h3>Shoot details</h3>
-                                <label for="type">Type</label>
-                                <select name="type" id="">
+                        </div>
+                        <div class="form-group">
+                            <h3>Shoot details</h3>
+                            <label for="type">Type</label>
+                            <select name="type" id="">
                                     <option value="">--Select type --</option>
                                     <option value="photo">Photoshoot</option>
                                     <option value="video">Videoshoot</option>
                                 </select>
-                                <label for="duration">Duration</label>
-                                <input type="number" id="duration" placeholder="shoot duration">
-                                <label for="location">Location</label>
-                                <input type="number" id="location" placeholder="shoot location">
-                                <label for="people">No of people</label>
-                                <input type="number" id="people" placeholder="how many people will participate?">
-                                <div class="btns">
-                                    <button class="btn center prev">
+                            <label for="duration">Duration</label>
+                            <input type="number" id="duration" placeholder="shoot duration">
+                            <label for="location">Location</label>
+                            <input type="number" id="location" placeholder="shoot location">
+                            <label for="people">No of people</label>
+                            <input type="number" id="people" placeholder="how many people will participate?">
+                            <div class="btns">
+                                <button class="btn center prev">
                                         <span class="center"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m12.707 7.707-1.414-1.414L5.586 12l5.707 5.707 1.414-1.414L8.414 12z"></path><path d="M16.293 6.293 10.586 12l5.707 5.707 1.414-1.414L13.414 12l4.293-4.293z"></path></svg></span>
                                         Previous
                                     </button>
-                                    <button class="btn">Book</button>
-                                </div>
+                                <button class="btn">Book</button>
                             </div>
-                        </form>
-                    </div>
-                </section>
+                        </div>
+                    </form>
+                </div>
             </section>
         </section>
-        <footer id="contacts" class="center">
-            <div>
-                <section class="socials">
-                    <h1>photo<span>Lab</span></h1>
-                    <article>
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
-                    </article>
-                </section>
-                <form class="subscription">
-                    <h3>Subscribe to our newsletter</h3>
-                    <input type="email" placeholder="enter your email">
-                    <button class="subscribe btn">Subscribe</button>
-                </form>
-            </div>
-        </footer>
+    </section>
+    <footer id="contacts" class="center">
+        <div>
+            <section class="socials">
+                <h1>photo<span>Lab</span></h1>
+                <article>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                </article>
+            </section>
+            <form class="subscription">
+                <h3>Subscribe to our newsletter</h3>
+                <input type="email" placeholder="enter your email">
+                <button class="subscribe btn">Subscribe</button>
+            </form>
+        </div>
+    </footer>
     </main>
 </body>
 

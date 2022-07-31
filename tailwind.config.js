@@ -5,13 +5,13 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                main: "#fff",
-                secondary: "#006851",
-                text: "#000",
+                main: "#E9EAEC",
+                secondary: "#FF6501",
+                text: "#005D9E",
                 fade: "#0000009a",
             },
             fontFamily: {
-                main: ["Raleway", "Geneva", "sans-serif"],
+                mFont: ["Raleway", "Geneva", "sans-serif"],
                 logo: ["Edu VIC WA NT Beginner", "cursive"],
                 headline: ["Bebas Neue", "cursive"],
             },
