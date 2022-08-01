@@ -1,8 +1,8 @@
 //Menu
-const menuBtn = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+const menuBtn = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
 
-menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener("click", () => {
     const isMenuOpen = menu.classList.contains("open-menu");
     if (isMenuOpen) {
         menu.classList.remove("open-menu");
@@ -11,8 +11,6 @@ menuBtn.addEventListener('click', () => {
     }
 });
 
-
-
 //Hero
 
 const introTextCont = document.querySelector(".intro p");
@@ -20,9 +18,9 @@ const introTextCont = document.querySelector(".intro p");
 const introText = `Our HD lenses await to capture your, memories with the best shots.`;
 
 const withSpan = [...introText].map((letter, index) => {
-    return `<span class="fade-text" style='animation-delay:${index * 40}ms;'>${
-    letter === "," ? "</br>" : letter
-  }</span>`;
+    return `<span class="opacity-0" style='animation: text 200ms linear forwards; animation-delay:${
+    index * 40
+  }ms;'>${letter === "," ? "</br>" : letter}</span>`;
 });
 
 introTextCont.innerHTML = withSpan.join("");
@@ -67,8 +65,8 @@ serviceContainers.forEach((cont) => serviceObserver.observe(cont));
 
 //Booking
 
-const form = document.querySelector(".book");
-const inputs = form.querySelectorAll(".input");
+const bookingForm = document.querySelector(".book");
+const inputs = bookingForm.querySelectorAll(".input");
 
 inputs.forEach((input) => {
     input.addEventListener("blur", (e) => {
@@ -79,3 +77,21 @@ inputs.forEach((input) => {
         }
     });
 });
+
+//Scroll to booking
+
+const bookingBtns = document.querySelectorAll("#services button");
+
+bookingBtns.forEach((button) => {
+    button.addEventListener("click", (e) => {
+        const selectService = e.target.getAttribute("data-service-val");
+        scrollToBooking();
+        bookingForm
+            .querySelector(`input[value=${selectService}]`)
+            .setAttribute("checked", true);
+    });
+});
+
+const scrollToBooking = () => bookingForm.scrollIntoView();
+
+document.querySelector(".cta").addEventListener("click", scrollToBooking);
