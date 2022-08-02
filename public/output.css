@@ -558,6 +558,28 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.partners {
+  -webkit-animation: partners 8s linear infinite;
+          animation: partners 8s linear infinite;
+}
+
+.partners-container:hover>.partners {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes partners {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes partners {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -594,8 +616,24 @@ video {
   bottom: 0px;
 }
 
+.-left-4 {
+  left: -1rem;
+}
+
 .left-1\/2 {
   left: 50%;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.-left-2 {
+  left: -0.5rem;
 }
 
 .z-30 {
@@ -680,12 +718,28 @@ video {
   height: 20rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-3 {
   height: 0.75rem;
 }
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .max-h-\[400px\] {
@@ -718,12 +772,24 @@ video {
   width: 91.666667%;
 }
 
-.w-80 {
-  width: 20rem;
+.w-\[508px\] {
+  width: 508px;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-72 {
   width: 18rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .w-5 {
@@ -801,6 +867,10 @@ video {
   justify-content: space-between;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -857,6 +927,10 @@ video {
 
 .fill-secondary {
   fill: #FF6501;
+}
+
+.fill-fade {
+  fill: #0000009a;
 }
 
 .stroke-1 {
@@ -1001,12 +1075,28 @@ video {
   accent-color: #005D9E;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .opacity-0 {
   opacity: 0;
 }
 
 .opacity-10 {
   opacity: 0.1;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-20 {
+  opacity: 0.2;
 }
 
 .outline-none {
@@ -1129,6 +1219,18 @@ video {
 
 .\[scroll-behavior\:smooth\] {
   scroll-behavior: smooth;
+}
+
+.\[--color\:red\] {
+  --color: red;
+}
+
+.\[--fill\:red\] {
+  --fill: red;
+}
+
+.\[--transform\:rotate\(50deg\)\] {
+  --transform: rotate(50deg);
 }
 
 .placeholder\:invisible::-moz-placeholder {
@@ -1436,8 +1538,8 @@ video {
     width: fit-content;
   }
 
-  .sm\:w-80 {
-    width: 20rem;
+  .sm\:w-\[508px\] {
+    width: 508px;
   }
 
   .sm\:w-96 {
@@ -1478,8 +1580,8 @@ video {
     bottom: 4rem;
   }
 
-  .md\:right-4 {
-    right: 1rem;
+  .md\:right-0 {
+    right: 0px;
   }
 
   .md\:h-\[450px\] {

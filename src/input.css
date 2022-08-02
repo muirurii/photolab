@@ -1,6 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .partners {
+        animation: partners 8s linear infinite;
+    }
+    .partners-container:hover>.partners {
+        animation-play-state: paused;
+    }
+    @keyframes partners {
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}
+
 @layer utilities {
     .open-menu {
         @apply opacity-100;
