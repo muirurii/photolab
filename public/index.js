@@ -25,6 +25,49 @@ const withSpan = [...introText].map((letter, index) => {
 
 introTextCont.innerHTML = withSpan.join("");
 
+
+//Accent
+
+const heroAccent = document.querySelector(".hero-accent");
+
+const accentObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                console.log(3)
+                entry.target.classList.add("animate")
+            } else {
+                console.log(6)
+                entry.target.classList.remove("animate");
+            }
+        });
+    }, {
+        threshold: 0.4,
+    }
+);
+
+accentObserver.observe(heroAccent);
+
+//About
+
+const aboutCont = document.querySelectorAll(".about-card");
+
+const aboutObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.querySelector('img').classList.add("show-image");
+            } else {
+                entry.target.querySelector('img').classList.remove("show-image");
+            }
+        });
+    }, {
+        threshold: 0.4,
+    }
+);
+
+aboutCont.forEach((cont) => aboutObserver.observe(cont));
+
 //Gallery
 
 const imageContainers = document.querySelectorAll(".image");
@@ -39,11 +82,12 @@ const imageObserver = new IntersectionObserver(
             }
         });
     }, {
-        threshold: 0.3,
+        threshold: 0.4,
     }
 );
 
 imageContainers.forEach((cont) => imageObserver.observe(cont));
+
 
 const serviceContainers = document.querySelectorAll("#services article");
 
@@ -92,6 +136,9 @@ bookingBtns.forEach((button) => {
     });
 });
 
-const scrollToBooking = () => bookingForm.scrollIntoView();
+const scrollToBooking = () => {
+    const s = bookingForm.parentElement.offsetTop;
+    window.scrollTo(0, s)
+};
 
 document.querySelector(".cta").addEventListener("click", scrollToBooking);

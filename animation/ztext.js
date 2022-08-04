@@ -174,11 +174,20 @@ if (
     );
 
 var ztxt = new Ztextify(".z-text", {
-    depth: "30px",
-    layers: 10,
+    depth: "10px",
+    layers: 2,
     fade: true,
     direction: "forwards",
     event: "pointer",
     eventRotation: "10deg",
+    perspective: "800px",
+});
+var ztxt = new Ztextify(".z-text-r", {
+    depth: "10px",
+    layers: 2,
+    fade: true,
+    direction: "reverse",
+    event: "pointer",
+    eventRotation: "-10deg",
     perspective: "800px",
 });
