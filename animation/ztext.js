@@ -179,15 +179,6 @@ var ztxt = new Ztextify(".z-text", {
     fade: true,
     direction: "forwards",
     event: "pointer",
-    eventRotation: "10deg",
-    perspective: "800px",
-});
-var ztxt = new Ztextify(".z-text-r", {
-    depth: "10px",
-    layers: 2,
-    fade: true,
-    direction: "reverse",
-    event: "pointer",
-    eventRotation: "-10deg",
-    perspective: "800px",
+    eventRotation: "25deg",
+    perspective: "500px",
 });

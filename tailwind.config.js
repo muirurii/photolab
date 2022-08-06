@@ -6,14 +6,16 @@ module.exports = {
         extend: {
             colors: {
                 main: "#E9EAEC",
-                secondary: "#FF6501",
-                text: "#005D9E",
-                fade: "#0000009a",
+                // secondary: "#FF6501",
+                secondary: "#f40000",
+                // text: "#005D9E",
+                text: "#000",
+                fade: "#c9c9c9a2",
             },
             fontFamily: {
                 mFont: ["Raleway", "Geneva", "sans-serif"],
                 logo: ["Edu VIC WA NT Beginner", "cursive"],
-                headline: ["Bebas Neue", "cursive"],
+                headline: ["Alumni Sans Inline One", "cursive"],
             },
             height: {
                 hero: "calc(100vh - 70px)",
@@ -22,7 +24,7 @@ module.exports = {
                 hero: "calc(100vh - 70px)",
             },
             translate: {
-                menuHide: "calc(100% + 70px)",
+                menuHide: "101%",
             }
         },
     },

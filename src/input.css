@@ -13,18 +13,16 @@
 }
 
 @layer utilities {
+    .scrolled {
+        background: unset;
+        @apply bg-white;
+    }
     .open-menu {
         @apply opacity-100;
-        transform: unset;
-        border-radius: unset;
-    }
-    .main-menu li::before {
-        height: 1px;
-        background-color: #fff;
-        transition: transform 300ms, opacity 300ms 0ms ease-in;
+        @apply transform-none;
     }
     .z-text span {
-        transition: 400ms ease-in-out;
+        transition: 300ms linear;
     }
     @keyframes text {
         to {
@@ -47,20 +45,20 @@
         transform: translateZ(4rem);
     }
     .show-image {
-        transform: perspective(2000px) rotateZ(10deg) rotateX(10deg) translateY(10%) translateX(-0%);
-        animation: about 800ms 200ms ease-in-out forwards;
+        transform: perspective(2000px) rotateZ(10deg) rotateX(-40deg) rotateY(-20deg) translateY(30%) translateX(-20%);
+        animation: about 400ms 100ms ease-in-out forwards;
     }
     @keyframes about {
         100% {
             transform: unset;
-            opacity: 1;
+            @apply opacity-100;
         }
     }
     .reveal {
         transform: unset;
     }
     .show-service {
-        opacity: 1;
+        @apply opacity-100;
         transform: unset;
     }
 }
