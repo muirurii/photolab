@@ -20,22 +20,24 @@ menu.addEventListener("click", () => {
     window.innerWidth >= 640 ? null : closeMenu();
 });
 
-const menuItems = menu.querySelectorAll('span');
+const menuItems = menu.querySelectorAll("span");
 
-const generate = str => {
-    let result = '';
+const generateSpans = (str) => {
+    let result = "";
     for (let i = 0; i < str.length; i++) {
         const delay = `${50 * i}ms`;
-        result += `<span class="group-hover:text-secondary transition-all ease-linear duration-300" style="transition-delay:${delay}" >${str[i]}</span>`
+        result += `<span class="group-hover:text-secondary transition-all ease-linear duration-300" style="transition-delay:${delay}" >${str[i]}</span>`;
     }
     return result;
-}
+};
 
-menuItems.forEach(item => {
+menuItems.forEach((item) => {
     const text = item.textContent;
-    item.innerHTML = generate(text);
-    item.parentElement.parentElement.style.transitionDuration = `${text.length * 50 + 600}ms`
-})
+    item.innerHTML = generateSpans(text);
+    item.parentElement.parentElement.style.transitionDuration = `${
+    text.length * 50 + 300
+  }ms`;
+});
 
 //Hero
 
@@ -51,7 +53,6 @@ const withSpan = [...introText].map((letter, index) => {
 
 introTextCont.innerHTML = withSpan.join("");
 
-
 //Accent
 
 const heroAccent = document.querySelector(".hero-accent");
@@ -60,7 +61,7 @@ const accentObserver = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("animate")
+                entry.target.classList.add("animate");
             } else {
                 entry.target.classList.remove("animate");
             }
@@ -76,22 +77,26 @@ accentObserver.observe(heroAccent);
 
 const mark = document.querySelector(".hero");
 const header = document.querySelector("header");
+const toTop = document.querySelector(".to-top");
 
 const headerObserver = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             if (!entry.isIntersecting) {
-                header.classList.add("scrolled")
+                header.classList.add("scrolled");
+                toTop.classList.add("show-to-top");
             } else {
                 header.classList.remove("scrolled");
+                toTop.classList.remove("show-to-top");
             }
         });
     }, {
-        threshold: 0.1
+        threshold: 0.1,
     }
 );
 
 headerObserver.observe(mark);
+toTop.addEventListener('click', () => window.scrollTo(0, 0))
 
 //About
 
@@ -101,9 +106,9 @@ const aboutObserver = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.querySelector('img').classList.add("show-image");
+                entry.target.querySelector("img").classList.add("show-image");
             } else {
-                entry.target.querySelector('img').classList.remove("show-image");
+                entry.target.querySelector("img").classList.remove("show-image");
             }
         });
     }, {
@@ -132,7 +137,6 @@ const imageObserver = new IntersectionObserver(
 );
 
 imageContainers.forEach((cont) => imageObserver.observe(cont));
-
 
 const serviceContainers = document.querySelectorAll("#services article");
 
@@ -182,8 +186,12 @@ bookingBtns.forEach((button) => {
 });
 
 const scrollToBooking = () => {
-    const s = bookingForm.parentElement.parentElement.offsetTop;
-    window.scrollTo(0, s)
+    const fromTop = bookingForm.parentElement.parentElement.offsetTop;
+    window.scrollTo(0, fromTop);
 };
 
 document.querySelector(".cta").addEventListener("click", scrollToBooking);
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".loader").classList.add("scale-y-0");
+});

@@ -44,13 +44,17 @@
     .hero-accent.animate::before {
         transform: translateZ(4rem);
     }
+    .show-to-top {
+        @apply transform-none;
+        @apply opacity-100;
+    }
     .show-image {
         transform: perspective(2000px) rotateZ(10deg) rotateX(-40deg) rotateY(-20deg) translateY(30%) translateX(-20%);
         animation: about 400ms 100ms ease-in-out forwards;
     }
     @keyframes about {
         100% {
-            transform: unset;
+            @apply transform-none;
             @apply opacity-100;
         }
     }
@@ -59,6 +63,6 @@
     }
     .show-service {
         @apply opacity-100;
-        transform: unset;
+        @apply transform-none;
     }
 }
