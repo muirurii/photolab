@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Inline+One&family=Edu+VIC+WA+NT+Beginner&family=Raleway:wght@200;300;400&display=swap" rel="preload" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Inline+One&family=Edu+VIC+WA+NT+Beginner&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Inline+One&family=Edu+VIC+WA+NT+Beginner&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet"> -->
     <link href="./public/output.css" rel="stylesheet">
     <script src="./animation/ztext.js" defer></script>
     <script src="./public/index.js" defer></script>
@@ -33,12 +33,12 @@
             </g>
             </svg>
     </button>
-    <header class="h-[70px] w-screen bg-gradient-to-r from-gray-100 to-gray-300 fixed top-0 z-30 flex items-center justify-evenly">
+    <header class="h-[70px] w-screen bg-transparent backdrop-blur-lg fixed top-0 z-[202] flex items-center justify-evenly">
         <div class="flex items-center w-full h-full sm:w-fit">
             <h1 class="font-logo text-2xl pl-4"><span>photo</span><span class="text-secondary">Lab</span></h1>
         </div>
-        <nav class="translate-x-menuHide opacity-0 bg-gradient-to-r from-gray-100 to-gray-300 sm:opacity-100 sm:transform-none sm:transition-none sm:bg-none sm:block h-48 sm:h-full w-48 sm:w-[508px] py-4 absolute sm:relative top-[70px] sm:top-0 right-0 -z-20 px-4 items-center menu">
-            <ul class="flex flex-col sm:flex-row sm:items-center justify-center h-full w-full">
+        <nav class="translate-x-menuHide opacity-0 bg-fade backdrop-blur-md sm:backdrop-blur-0 sm:opacity-100 sm:transform-none sm:transition-none sm:bg-transparent sm:block h-screen sm:h-full w-56 sm:w-[508px] pt-20 sm:py-4 absolute sm:relative top-0 right-0 -z-20 px-4 sm:items-center menu">
+            <ul class="flex flex-col sm:flex-row sm:items-center sm:justify-center h-full w-full">
                 <a href="#">
                     <li class="relative group text-text before:h-[1px] before:absolute before:right-2 before:bottom-[1px] before:bg-secondary before:left-2 before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform ease-linear before:duration-[inherit] sm:hover:before:scale-x-100">
                         <span class="text-sm px-2">home</span>
@@ -47,13 +47,13 @@
                     <li class="relative group text-text before:h-[1px] before:absolute before:right-2 before:bottom-[1px] before:bg-secondary before:left-2 before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform ease-linear before:duration-[inherit] sm:hover:before:scale-x-100">
                         <span class="text-sm px-2">about us</span>
                 </a>
-                <a href="#gallery">
-                    <li class="relative group text-text before:h-[1px] before:absolute before:right-2 before:bottom-[1px] before:bg-secondary before:left-2 before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform ease-linear before:duration-[inherit] sm:hover:before:scale-x-100">
-                        <span class="text-sm px-2">gallery</span>
-                </a>
                 <a href="#services">
                     <li class="relative group text-text before:h-[1px] before:absolute before:right-2 before:bottom-[1px] before:bg-secondary before:left-2 before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform ease-linear before:duration-[inherit] sm:hover:before:scale-x-100">
                         <span class="text-sm px-2">services</span>
+                </a>
+                <a href="#gallery">
+                    <li class="relative group text-text before:h-[1px] before:absolute before:right-2 before:bottom-[1px] before:bg-secondary before:left-2 before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform ease-linear before:duration-[inherit] sm:hover:before:scale-x-100">
+                        <span class="text-sm px-2">gallery</span>
                 </a>
                 <a href="#booking">
                     <li class="relative group text-text before:h-[1px] before:absolute before:right-2 before:bottom-[1px] before:bg-secondary before:left-2 before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform ease-linear before:duration-[inherit] sm:hover:before:scale-x-100">
@@ -61,15 +61,19 @@
                 </a>
             </ul>
         </nav>
-        <button type="menu" class="sm:hidden absolute w-fit h-fit right-3 top-1/2 -translate-y-1/2 menu-toggle">
-            <svg class="fill-text" width="25px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+        <button type="menu" class="transition-all duration-300 sm:hidden absolute w-fit h-fit right-8 top-1/2 -translate-y-1/2 menu-toggle">
+            <svg class="fill-text lines" width="25px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
                 <rect width="16" height="16" id="icon-bound" fill="none"/>
                 <path d="M1,9h14V7H1V9z M1,14h14v-2H1V14z M1,2v2h14V2H1z"/>
             </svg>
+            <svg class="text-secondary hidden close" xmlns="http://www.w3.org/2000/svg" width="25px" height="30px" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
         </button>
     </header>
     <main>
-        <section class="hero bg-gradient-to-r from-gray-100 to-gray-300 min-h-screen pt-[70px] pb-48 sm:pb-0">
+        <section class="hero bg-conic from-white via-sky-500 to-sky-500 min-h-screen pt-[70px] pb-72 sm:pb-0">
             <article class="flex flex-col justify-center min-h-hero pl-4 md:pl-24 lg:pl-32 intro z-10 relative">
                 <h1 class="font-headline text-6xl">
                     EXPERIENCE PROFESSIONAL<br/> <span class="text-secondary z-text">VIDEOGRAPHY</span> AND
@@ -78,13 +82,15 @@
                 <p class="mt-4"></p>
                 <button class="cta bg-transparent rounded text-white hover:text-text text-sm w-fit mt-8 py-3 px-6 border border-secondary relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-secondary before:-z-10 before:transition-transform before:duration-500 before:ease-in-out before:origin-left hover:before:origin-right hover:before:scale-x-0">Get started</button>
             </article>
-            <div class="absolute bottom-[-140px] sm:bottom-52 md:bottom-1/2 sm:translate-y-1/2 left-4 sm:right-4 sm:left-[unset] md:right-8 lg:right-32">
-                <div class="flex items-center justify-center hero-accent rounded-sm relative h-64 w-52 bg-text before:h-full before:w-full before:border-white before:border-[2px] before:absolute before:top:0 before:left-0 before:[transform:translateX(3rem)] before:duration-1000 before:rounded-sm after:rounded-sm after:h-full after:w-full after:bg-secondary after:absolute after:top:0 after:left-0 after:[transform:translateX(-3rem)] after:duration-1000"></div>
+            <div class="absolute bottom-[-200px] sm:bottom-52 md:bottom-1/2 sm:translate-y-1/2 left-0 sm:righ-4 sm:left-[unset] sm:right-16 lg:right-32">
+                <div class="flex items-center justify-center hero-accent rounded-sm relative h-64 w-64 lg:h-72 lg:w-72 bg-text before:h-full before:w-full before:border-white before:border-[2px] before:absolute before:top:0 before:left-0 before:[transform:translateX(3rem)] before:duration-1000 before:rounded-sm after:rounded-sm after:h-full after:w-full after:bg-secondary after:absolute after:top:0 after:left-0 after:[transform:translateX(-3rem)] after:duration-1000">
+                    <img src="https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg?auto=compress&cs=tinysrgb&w=600" alt="photographer holding a camera" class="w-full h-full">
+                </div>
             </div>
         </section>
         <section id="about" class="pt-20">
             <h1 class="text-3xl pl-4 pb-8 text-secondary relative">
-                <span class="font-semibold">About us</span>
+                <span>About us</span>
                 <svg class="absolute top-0 -left-2 fill-fade -z-10 w-16 h-16 opacity-80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" data-name="Layer 1" id="Layer_1"><path d="M26,52A26,26,0,0,1,22.88.19,25.78,25.78,0,0,1,34.73,1.5a2,2,0,1,1-1.35,3.77,22,22,0,0,0-21,38,22,22,0,0,0,35.41-20,2,2,0,1,1,4-.48A26,26,0,0,1,26,52Z"/><path d="M26,43.86a2,2,0,0,1-2-2V22.66a2,2,0,1,1,4,0v19.2A2,2,0,0,1,26,43.86Z"/><circle cx="26" cy="15.71" r="2.57"/></svg>
             </h1>
             <section class="mt-4">
@@ -111,36 +117,9 @@
                 </section>
             </section>
         </section>
-        <section id="gallery" class="pt-20">
-            <h1 class="text-3xl pl-4 pb-8 text-secondary relative">
-                <span class="font-semibold">Gallery</span>
-                <svg class="absolute top-0 -left-2 fill-fade -z-10 w-16 h-16 opacity-80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.2 512.2" style="enable-background:new 0 0 512.2 512.2;"
-                    xml:space="preserve">
-                    <g>
-                        <g>
-                            <g>
-                                <path d="M495.1,38.4H85.5c-9.4,0-17.1,7.6-17.1,17.1v17.1H51.3c-9.4,0-17.1,7.6-17.1,17.1v17.1H17.1c-9.4,0-17.1,7.6-17.1,17.1     v332.8c0,9.4,7.6,17.1,17.1,17.1h409.6c9.4,0,17.1-7.6,17.1-17.1v-17.1h17.1c9.4,0,17.1-7.6,17.1-17.1v-17.1h17.1     c9.4,0,17.1-7.6,17.1-17.1V55.5C512.2,46,504.6,38.4,495.1,38.4z M426.8,314.4l-44.7-51.2c-3.4-3.9-9.4-3.9-12.9,0l-54,61.8     L168,194.2c-3.2-2.9-8.1-2.9-11.3,0L17.3,318.1V132.3c0-4.7,3.8-8.5,8.5-8.5h392.5c4.7,0,8.5,3.8,8.5,8.5V314.4z M452.5,422.4     H444V123.7c0-9.4-7.6-17.1-17.1-17.1H51.4v-8.5c0-4.7,3.8-8.5,8.5-8.5h392.5c4.7,0,8.5,3.8,8.5,8.5l0.1,315.8     C461,418.6,457.2,422.4,452.5,422.4z M486.6,388.2h-8.5V89.6c0-9.4-7.6-17.1-17.1-17.1H85.5V64c0-4.7,3.8-8.5,8.5-8.5h392.5     c4.7,0,8.5,3.8,8.5,8.5v315.7h0.1C495.1,384.4,491.3,388.2,486.6,388.2z"/>
-                                <path d="M307.4,174.9c-18.8,0-34.1,15.3-34.1,34.1c0,18.8,15.3,34.1,34.1,34.1c18.8,0,34.1-15.3,34.1-34.1     C341.5,190.2,326.2,174.9,307.4,174.9z"/>
-                            </g>
-                        </g>
-                    </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
-                    </g>
-                    </svg>
-            </h1>
-            <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/9876711/pexels-photo-9876711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
-                <div class="image scale-0 transition-transform max-h-[400px] sm:max-h-[800px] row-span-2"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/1777843/pexels-photo-1777843.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
-                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/2170387/pexels-photo-2170387.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
-                <div class="image scale-0 transition-transform max-h-[400px] sm:max-h-[800px] row-span-2"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/965324/pexels-photo-965324.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
-                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
-                <div class="image scale-0 transition-transform max-h-[400px] sm:max-h-[800px] sm:row-span-2 md:max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/10668002/pexels-photo-10668002.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-                        alt="Example photo"></div>
-                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
-            </section>
-        </section>
         <section class="pt-20" id="services">
             <h1 class="text-3xl pl-4 pb-8 text-secondary relative">
-                <span class="font-semibold">Services</span>
+                <span>Services</span>
                 <svg class="absolute top-0 -left-2 fill-fade -z-10 w-16 h-16 opacity-80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;"
                     xml:space="preserve">
                     <path id="support--services_1_" d="M13,12.64c-0.199,0-0.36,0.161-0.36,0.36v6c0,0.199,0.161,0.36,0.36,0.36h6  c0.199,0,0.36-0.161,0.36-0.36v-6c0-0.199-0.161-0.36-0.36-0.36H13z M18.64,18.64h-5.28v-5.28h5.28V18.64z M25.5,5.36H11V4.64h14.5  c3.231,0,5.86,2.628,5.86,5.86s-2.629,5.86-5.86,5.86H21v-0.72h4.5c2.834,0,5.14-2.306,5.14-5.14S28.334,5.36,25.5,5.36z M1.36,9  H0.64V8.5c0-1.714,1.032-3.264,2.575-3.959C2.848,4.118,2.641,3.574,2.641,3c0-1.301,1.058-2.36,2.359-2.36S7.359,1.699,7.359,3  c0,0.574-0.208,1.118-0.574,1.541C8.328,5.236,9.36,6.785,9.36,8.5V9H8.64V8.5c0-1.605-1.087-3.038-2.644-3.483  C5.861,4.978,5.761,4.864,5.739,4.725C5.718,4.585,5.78,4.447,5.897,4.37C6.362,4.064,6.64,3.552,6.64,3  c0-0.904-0.736-1.64-1.64-1.64S3.36,2.096,3.36,3c0,0.552,0.277,1.064,0.742,1.37c0.118,0.077,0.18,0.215,0.159,0.355  C4.239,4.864,4.139,4.978,4.004,5.017C2.447,5.462,1.36,6.894,1.36,8.5V9z M31.36,30.499V31h-0.72v-0.501  c0-1.605-1.087-3.037-2.643-3.483c-0.136-0.038-0.236-0.152-0.257-0.291c-0.021-0.14,0.04-0.278,0.157-0.355  c0.465-0.306,0.742-0.817,0.742-1.369c0-0.904-0.735-1.64-1.64-1.64s-1.64,0.735-1.64,1.64c0,0.552,0.277,1.063,0.742,1.369  c0.117,0.077,0.179,0.216,0.157,0.355c-0.021,0.139-0.121,0.253-0.257,0.291c-1.556,0.446-2.643,1.878-2.643,3.483V31H22.64v-0.501  c0-1.714,1.032-3.264,2.575-3.959c-0.367-0.423-0.575-0.967-0.575-1.54c0-1.302,1.059-2.36,2.36-2.36s2.36,1.059,2.36,2.36  c0,0.573-0.208,1.117-0.575,1.54C30.328,27.235,31.36,28.785,31.36,30.499z M18.255,23.745L21.509,27l-3.254,3.255l-0.51-0.51  l2.386-2.385H6.5c-3.231,0-5.86-2.629-5.86-5.86s2.628-5.86,5.86-5.86H11v0.72H6.5c-2.834,0-5.14,2.306-5.14,5.14  s2.306,5.14,5.14,5.14h13.631l-2.386-2.385L18.255,23.745z"/>
@@ -201,9 +180,36 @@
                 </article>
             </section>
         </section>
+        <section id="gallery" class="pt-20">
+            <h1 class="text-3xl pl-4 pb-8 text-secondary relative">
+                <span>Gallery</span>
+                <svg class="absolute top-0 -left-2 fill-fade -z-10 w-16 h-16 opacity-80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.2 512.2" style="enable-background:new 0 0 512.2 512.2;"
+                    xml:space="preserve">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M495.1,38.4H85.5c-9.4,0-17.1,7.6-17.1,17.1v17.1H51.3c-9.4,0-17.1,7.6-17.1,17.1v17.1H17.1c-9.4,0-17.1,7.6-17.1,17.1     v332.8c0,9.4,7.6,17.1,17.1,17.1h409.6c9.4,0,17.1-7.6,17.1-17.1v-17.1h17.1c9.4,0,17.1-7.6,17.1-17.1v-17.1h17.1     c9.4,0,17.1-7.6,17.1-17.1V55.5C512.2,46,504.6,38.4,495.1,38.4z M426.8,314.4l-44.7-51.2c-3.4-3.9-9.4-3.9-12.9,0l-54,61.8     L168,194.2c-3.2-2.9-8.1-2.9-11.3,0L17.3,318.1V132.3c0-4.7,3.8-8.5,8.5-8.5h392.5c4.7,0,8.5,3.8,8.5,8.5V314.4z M452.5,422.4     H444V123.7c0-9.4-7.6-17.1-17.1-17.1H51.4v-8.5c0-4.7,3.8-8.5,8.5-8.5h392.5c4.7,0,8.5,3.8,8.5,8.5l0.1,315.8     C461,418.6,457.2,422.4,452.5,422.4z M486.6,388.2h-8.5V89.6c0-9.4-7.6-17.1-17.1-17.1H85.5V64c0-4.7,3.8-8.5,8.5-8.5h392.5     c4.7,0,8.5,3.8,8.5,8.5v315.7h0.1C495.1,384.4,491.3,388.2,486.6,388.2z"/>
+                                <path d="M307.4,174.9c-18.8,0-34.1,15.3-34.1,34.1c0,18.8,15.3,34.1,34.1,34.1c18.8,0,34.1-15.3,34.1-34.1     C341.5,190.2,326.2,174.9,307.4,174.9z"/>
+                            </g>
+                        </g>
+                    </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g>
+                    </svg>
+            </h1>
+            <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/9876711/pexels-photo-9876711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px] sm:max-h-[800px] row-span-2"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/1777843/pexels-photo-1777843.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/2170387/pexels-photo-2170387.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px] sm:max-h-[800px] row-span-2"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/965324/pexels-photo-965324.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px] sm:max-h-[800px] sm:row-span-2 md:max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/10668002/pexels-photo-10668002.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                        alt="Example photo"></div>
+                <div class="image scale-0 transition-transform max-h-[400px]"><img class="h-full w-full transition-all border-white hover:border-fade hover:border-double border-[4px] hover:border-[3px]" src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Example photo"></div>
+            </section>
+        </section>
         <section class="pt-20 pb-16" id="booking">
             <h1 class="text-3xl pl-4 pb-8 text-secondary relative">
-                <span class="font-semibold">Booking</span>
+                <span>Booking</span>
                 <svg class="absolute top-0 -left-2 fill-fade -z-10 w-16 h-16 opacity-80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
                     xml:space="preserve">
                     <g>
@@ -305,7 +311,7 @@
         </section>
         <section>
             <h1 class="text-3xl pl-4 pb-8 text-secondary relative">
-                <span class="font-semibold">Our Partners</span>
+                <span>Our Partners</span>
                 <svg class="absolute top-0 -left-2 fill-fade -z-10 w-16 h-16 opacity-80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1_1_" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;"
                     xml:space="preserve">
                     <g>
@@ -375,6 +381,69 @@
                     </div>
                 </section>
             </section>
+        </section>
+        <section id="testimonials" class="py-20">
+            <h1 class="text-3xl pl-4 pb-8 text-secondary relative">
+                <span>Testimonials</span>
+                <svg class="absolute top-0 -left-2 fill-fade -z-10 w-16 h-16 opacity-80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                    xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M422.268,21.113v-2.639C422.268,8.288,413.98,0,403.794,0H382.68c-10.186,0-18.474,8.288-18.474,18.474v2.639h-79.175    v-2.639C285.031,8.288,276.743,0,266.557,0h-21.113c-10.186,0-18.474,8.288-18.474,18.474v2.639h-79.175v-2.639    C147.794,8.288,139.506,0,129.32,0h-21.113C98.02,0,89.732,8.288,89.732,18.474v2.639H0V512h512V21.113H422.268z M380.041,18.474    c0-1.43,1.209-2.639,2.639-2.639h21.113c1.43,0,2.639,1.209,2.639,2.639V63.34h-26.392V18.474z M242.804,18.474    c0-1.43,1.209-2.639,2.639-2.639h21.113c1.43,0,2.639,1.209,2.639,2.639V63.34h-26.392V18.474z M105.567,18.474    c0-1.43,1.209-2.639,2.639-2.639h21.113c1.43,0,2.639,1.209,2.639,2.639V63.34h-26.392V18.474z M496.165,496.165H15.835V163.629    h480.33V496.165z M496.165,147.794H15.835v-26.392h424.907v-15.835H15.835V36.948h73.897v42.227h58.062V36.948h79.175v42.227    h58.062V36.948h79.175v42.227h58.062V36.948h73.897V147.794z"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M248.082,184.742v68.619H36.948v221.691h332.536v-63.34h105.567V184.742H248.082z M142.515,459.216H52.784v-47.505h89.732    V459.216z M142.515,395.876H52.784v-58.062h89.732V395.876z M142.515,321.979H52.784v-52.784h89.732V321.979z M248.082,459.216    h-89.732v-47.505h89.732V459.216z M248.082,395.876h-89.732v-58.062h89.732V395.876z M248.082,321.979h-89.732v-52.784h89.732    V321.979z M353.649,459.216h-89.732v-47.505h89.732V459.216z M353.649,395.876h-89.732v-58.062h89.732V395.876z M353.649,321.979    h-89.732v-52.784h89.732V321.979z M353.649,253.361h-89.732v-52.784h89.732V253.361z M459.216,395.876h-89.732v-58.062h89.732    V395.876z M459.216,321.979h-89.732v-52.784h89.732V321.979z M459.216,253.361h-89.732v-52.784h89.732V253.361z"/>
+                        </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                    </svg>
+            </h1>
+            <section class="flex items-center flex-col justify-center">
+                <section class="relative w-[600px] h-52 overflow-x-hidden">
+                    <section class="customer hidden current items-center justify-center absolute top-0 bottom-2 left-2 right-2 rounded shadow-md p-4">
+                        <section class="w-36 h-full flex flex-col justify-center items-center">
+                            <img class="w-14 h-14 rounded-full" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" alt="consumer">
+                            <h4 class="text-secondary text-sm font-light pt-4">John Doe</h4>
+                        </section>
+                        <section class="w-fit flex items-center justify-center flex-col">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A mollitia reprehenderit nihil nostrum inventore dicta ea voluptate esse necessitatibus. Accusamus ducimus in aperiam expedita est assumenda reiciendis perferendis minus repellat.
+                            </p>
+                            <p class="pt-8">Rating</p>
+                        </section>
+                    </section>
+                    <section class="customer hidden items-center justify-center absolute top-0 bottom-2 left-2 right-2 rounded shadow-md p-4">
+                        <section class="w-36 h-full flex flex-col justify-center items-center">
+                            <img class="w-14 h-14 rounded-full" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" alt="consumer">
+                            <h4 class="text-secondary text-sm font-light pt-4">Jane Adeboku</h4>
+                        </section>
+                        <section class="w-fit flex items-center justify-center flex-col">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A mollitia reprehenderit nihil nostrum inventore dicta ea voluptate esse necessitatibus. Accusamus ducimus in aperiam expedita est assumenda reiciendis perferendis minus repellat.
+                            </p>
+                            <p class="pt-8">Rating</p>
+                        </section>
+                    </section>
+                    <section class="customer hidden items-center justify-center absolute top-0 bottom-2 left-2 right-2 rounded shadow-md p-4">
+                        <section class="w-36 h-full flex flex-col justify-center items-center">
+                            <img class="w-14 h-14 rounded-full" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" alt="consumer">
+                            <h4 class="text-secondary text-sm font-light pt-4">Smith White</h4>
+                        </section>
+                        <section class="w-fit flex items-center justify-center flex-col">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A mollitia reprehenderit nihil nostrum inventore dicta ea voluptate esse necessitatibus. Accusamus ducimus in aperiam expedita est assumenda reiciendis perferendis minus repellat.
+                            </p>
+                            <p class="pt-8">Rating</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="relative pt-4 flex items-center justify-center">
+                <button class="switch transition-colors bg-fade current-btn h-2 w-2 mr-1 rounded-full"></button>
+                <button class="switch transition-colors bg-fade h-2 w-2 mr-1 rounded-full"></button>
+                <button class="switch transition-colors bg-fade h-2 w-2 mr-1 rounded-full"></button>
+            </section>
+        </section>
         </section>
     </main>
     <footer class="min-h-[100px] bg-fade flex flex-wrap items-center justify-evenly border-y-[1px] border-fade">

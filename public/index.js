@@ -5,6 +5,7 @@ let isClicked = false;
 
 const closeMenu = () => {
     menu.classList.toggle("open-menu");
+    menuBtn.classList.toggle("btn-open");
 };
 
 menuBtn.addEventListener("click", () => {
@@ -26,7 +27,9 @@ const generateSpans = (str) => {
     let result = "";
     for (let i = 0; i < str.length; i++) {
         const delay = `${50 * i}ms`;
-        result += `<span class="group-hover:text-secondary transition-all ease-linear duration-300" style="transition-delay:${delay}" >${str[i]}</span>`;
+        result += `<span class="group-hover:text-secondary group-hover:bounce inline-block transition-colors origin-left ease-linear duration-300" style="transition-delay:${delay}; animation-delay:${delay};" >${
+      str[i] === " " ? "&nbsp;" : str[i]
+    }</span>`;
     }
     return result;
 };
@@ -35,7 +38,7 @@ menuItems.forEach((item) => {
     const text = item.textContent;
     item.innerHTML = generateSpans(text);
     item.parentElement.parentElement.style.transitionDuration = `${
-    text.length * 50 + 300
+    text.length * 50 + 600
   }ms`;
 });
 
@@ -96,7 +99,7 @@ const headerObserver = new IntersectionObserver(
 );
 
 headerObserver.observe(mark);
-toTop.addEventListener('click', () => window.scrollTo(0, 0))
+toTop.addEventListener("click", () => window.scrollTo(0, 0));
 
 //About
 
@@ -191,6 +194,47 @@ const scrollToBooking = () => {
 };
 
 document.querySelector(".cta").addEventListener("click", scrollToBooking);
+
+//Testimonials
+
+const customers = document.querySelectorAll(".customer");
+const switchBtns = Array.from(document.querySelectorAll(".switch"));
+let intervalIndex = 0;
+let interval;
+
+const autoOscillate = (i) => {
+    clearInterval(interval);
+    interval = setInterval(() => {
+        autoOscillate();
+    }, 3000);
+    intervalIndex = intervalIndex >= 2 ? 0 : ++intervalIndex;
+    const activeBtn = document.querySelector(".current-btn");
+    const nextBtn = switchBtns[intervalIndex];
+    activeBtn.classList.remove("current-btn");
+    nextBtn.classList.add("current-btn");
+    const transfOrigin =
+        intervalIndex < i ? "translate-x-full" : "-translate-x-full";
+    const activeCard = document.querySelector(".current");
+    activeCard.classList.remove("current");
+    activeCard.classList.remove("translate-x-full");
+    activeCard.classList.remove("-translate-x-full");
+    customers[intervalIndex].classList.add("current");
+    customers[intervalIndex].classList.add(transfOrigin);
+};
+
+autoOscillate(4);
+
+const switchCards = (e) => {
+    const prevIndex = intervalIndex;
+    const currIndex = switchBtns.findIndex((btn) => btn === e.target);
+    if (intervalIndex === currIndex) return;
+    intervalIndex = currIndex - 1;
+    autoOscillate(prevIndex);
+};
+
+switchBtns.forEach((button) => {
+    button.addEventListener("click", switchCards);
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".loader").classList.add("scale-y-0");
