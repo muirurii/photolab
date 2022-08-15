@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Inline+One&family=Edu+VIC+WA+NT+Beginner&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Edu+VIC+WA+NT+Beginner&family=Prompt:wght@300;400;500&display=swap" rel="preload" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Edu+VIC+WA+NT+Beginner&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="./public/output.css" rel="stylesheet">
     <script src="./animation/ztext.js" defer></script>
     <script src="./public/index.js" defer></script>
@@ -16,7 +16,7 @@
 </head>
 
 <body class="font-mFont bg-white text-text overflow-x-hidden">
-    <div class="loader transition-transform fixed top-0 left-0 z-50 w-screen h-screen bg-text flex items-center justify-center">
+    <div class="loader transition-transform fixed top-0 left-0 z-[3000] w-screen h-screen bg-text flex items-center justify-center">
         <div class="animate-spin">
             <div class="h-4 w-4 rounded -z-10 animate-pulse">
                 <div class="w-full h-full z-10 bg-white"></div>
@@ -35,9 +35,11 @@
     </button>
     <header class="h-[70px] w-screen bg-transparent backdrop-blur-lg fixed top-0 z-[202] flex items-center justify-evenly">
         <div class="flex items-center w-full h-full sm:w-fit">
-            <h1 class="font-logo text-2xl pl-4"><span>photo</span><span class="text-secondary">Lab</span></h1>
+            <h1 class="font-logo text-xl pl-4">
+                <span>photo</span><span class="text-secondary">Lab</span>
+            </h1>
         </div>
-        <nav class="translate-x-menuHide opacity-0 bg-fade backdrop-blur-md sm:backdrop-blur-0 sm:opacity-100 sm:transform-none sm:transition-none sm:bg-transparent sm:block h-screen sm:h-full w-56 sm:w-[508px] pt-20 sm:py-4 absolute sm:relative top-0 right-0 -z-20 px-4 sm:items-center menu">
+        <nav class="translate-x-menuHide opacity-0 bg-fade backdrop-blur-md sm:backdrop-blur-0 sm:opacity-100 sm:transform-none sm:transition-none sm:bg-inherit sm:block h-screen sm:h-full w-56 sm:w-[508px] pt-20 sm:py-4 absolute sm:relative top-0 right-0 -z-20 px-4 sm:items-center menu">
             <ul class="flex flex-col sm:flex-row sm:items-center sm:justify-center h-full w-full">
                 <a href="#">
                     <li class="relative group text-text before:h-[1px] before:absolute before:right-2 before:bottom-[1px] before:bg-secondary before:left-2 before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform ease-linear before:duration-[inherit] sm:hover:before:scale-x-100">
@@ -63,7 +65,7 @@
                     <svg class="w-8 h-8 hidden sm:block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 92 92" enable-background="new 0 0 92 92" xml:space="preserve">
                         <path id="XMLID_30_" d="M21,53c-1.8,0-3.7-0.8-5-2.1c-1.3-1.3-2-3.1-2-4.9c0-1.8,0.8-3.6,2-5c1.3-1.3,3.1-2,5-2c1.8,0,3.6,0.8,4.9,2  c1.3,1.3,2.1,3.1,2.1,5c0,1.8-0.8,3.6-2.1,4.9C24.6,52.2,22.8,53,21,53z M50.9,50.9c1.3-1.3,2.1-3.1,2.1-4.9c0-1.8-0.8-3.6-2.1-5  c-1.3-1.3-3.1-2-4.9-2c-1.8,0-3.7,0.8-5,2c-1.3,1.3-2,3.1-2,5c0,1.8,0.8,3.6,2,4.9c1.3,1.3,3.1,2.1,5,2.1  C47.8,53,49.6,52.2,50.9,50.9z M75.9,50.9c1.3-1.3,2.1-3.1,2.1-4.9c0-1.8-0.8-3.6-2.1-5c-1.3-1.3-3.1-2-4.9-2c-1.8,0-3.7,0.8-5,2  c-1.3,1.3-2,3.1-2,5c0,1.8,0.8,3.6,2,4.9c1.3,1.3,3.1,2.1,5,2.1C72.8,53,74.6,52.2,75.9,50.9z"/>
                     </svg>
-                    <ul class="sm:absolute rounded top-8 left-0 pl-2 sm:p-4 sm:hidden group-hover:block sm:bg-fade sm:backdrop-blur-md">
+                    <ul class="sm:absolute rounded top-8 left-0 pl-2 sm:p-4 sm:hidden group-hover:block sm:bg-white sm:backdrop-blur-md">
                         <a href="#partners">
                             <li class="pb-1 text-text text-sm hover:text-secondary">partners</li>
                         </a>
@@ -266,7 +268,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="block mt-4 py-[10px] px-7 bg-secondary text-white text-sm rounded-sm transition-opacity hover:opacity-80">Book</button>
+                    <button type="submit" class="block mt-8 py-[10px] px-7 bg-secondary text-white text-sm rounded-sm transition-opacity hover:opacity-80">Book</button>
                 </form>
                 <section class="bg-text min-h-[350px] max-w-sm md:max-w-lg mt-8 md:ml-16 md:mt-0 rounded flex items-center">
                     <ul class="text-white px-8">
@@ -475,39 +477,39 @@
         </section>
         </section>
     </main>
-    <footer id="feedback" class="p-4 bg-fade grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <footer id="feedback" class="p-4 bg-ade grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <form class="sm:mr-8">
-            <h3 class="text-secondary text-lg pb-4">Send us your feedback</h3>
-            <input type="text" class="w-64 h-10 bg-transparent block mb-2 border-b-[1px] round border-secondary outline-none pl-2 placeholder:text-text" placeholder="your name" required>
-            <textarea class="w-64 bg-transparent max-h-14 resize-none border-b-[1px] round border-secondary outline-none pl-2 placeholder:text-text" id="" cols="20" rows="10" placeholder="your message" required></textarea>
+            <h3 class="text-text text-lg pb-4">Send us your feedback</h3>
+            <input type="text" class="w-64 h-10 bg-transparent block mb-2 border-b-[1px] round border-secondary outline-none pl-2 placeholder:text-text placeholder:font-light" placeholder="enter your name" required>
+            <textarea class="w-64 bg-transparent max-h-14 resize-none border-b-[1px] round border-secondary outline-none pl-2 placeholder:text-text placeholder:font-light" id="" cols="20" rows="10" placeholder="enter your message" required></textarea>
             <button type="submit" class="block py-[10px] px-7 bg-secondary text-white rounded-sm mt-3 text-sm hover:opacity-80">Comment</button>
         </form>
         <section class="">
-            <h3 class="text-secondary text-lg pb-4">Links</h3>
+            <h3 class="text-text text-lg pb-4">Quick links</h3>
             <ul>
                 <a class="w-fit block transition-colors hover:text-secondary" href="#">
-                    <li class="text-sm">home</li>
+                    <li class="text-sm font-light">home</li>
                 </a>
                 <a class="w-fit block transition-colors hover:text-secondary" href="#about">
-                    <li class="text-sm">about</li>
+                    <li class="text-sm font-light">about</li>
                 </a>
                 <a class="w-fit block transition-colors hover:text-secondary" href="#services">
-                    <li class="text-sm">services</li>
+                    <li class="text-sm font-light">services</li>
                 </a>
                 <a class="w-fit block transition-colors hover:text-secondary" href="#gallery">
-                    <li class="text-sm">gallery</li>
+                    <li class="text-sm font-light">gallery</li>
                 </a>
                 <a class="w-fit block transition-colors hover:text-secondary" href="#booking">
-                    <li class="text-sm">booking</li>
+                    <li class="text-sm font-light">booking</li>
                 </a>
                 <a class="w-fit block transition-colors hover:text-secondary" href="#partners">
-                    <li class="text-sm">partners</li>
+                    <li class="text-sm font-light">partners</li>
                 </a>
             </ul>
         </section>
-        <section class="flex flex-col justify-between">
+        <section class="flex flex-col sm:col-span-2 lg:col-span-1 justify-between">
             <article>
-                <h3 class="text-secondary text-lg pb-4">Follow us</h3>
+                <h3 class="text-text text-lg pb-4">Follow us</h3>
                 <ul class="flex w-64">
                     <li class="pr-6">
                         <svg class="w-5 h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve">
@@ -563,8 +565,8 @@
                 </ul>
             </article>
             <div class="flex w-full items-end justify-between mt-8 lg:mt-0">
-                <h1 class="text-2xl font-logo">photo<span class="text-secondary">Lab</span></h1>
-                <p class="text-sm">Copyright 2017 - 2022 &copy;</p>
+                <p class="text-sm font-light">PhotoLab</p>
+                <p class="text-sm font-light">Copyright 2017 - 2022 &copy;</p>
             </div>
         </section>
     </footer>

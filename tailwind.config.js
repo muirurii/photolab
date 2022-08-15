@@ -5,17 +5,14 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                main: "#E9EAEC",
-                // secondary: "#FF6501",
                 secondary: "#f40000",
-                third: "#02a6fc",
                 text: "#000",
                 fade: "#c9c9c9d2",
             },
             fontFamily: {
-                mFont: ["Poppins", "Geneva", "sans-serif"],
+                mFont: ["Prompt", "Geneva", "sans-serif"],
                 logo: ["Edu VIC WA NT Beginner", "cursive"],
-                headline: ["Alumni Sans Inline One", "cursive"],
+                headline: ["Alumni Sans Inline One", "Geneva", "cursive"],
             },
             height: {
                 hero: "calc(100vh - 70px)",
