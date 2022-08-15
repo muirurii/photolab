@@ -3,10 +3,10 @@ const menuBtn = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 let isClicked = false;
 
-const closeMenu = () => {
+function closeMenu() {
     menu.classList.toggle("open-menu");
     menuBtn.classList.toggle("btn-open");
-};
+}
 
 menuBtn.addEventListener("click", () => {
     closeMenu();
@@ -23,16 +23,16 @@ menu.addEventListener("click", () => {
 
 const menuItems = menu.querySelectorAll("span");
 
-const generateSpans = (str) => {
+function generateSpans(str) {
     let result = "";
     for (let i = 0; i < str.length; i++) {
         const delay = `${50 * i}ms`;
-        result += `<span class="group-hover:text-secondary group-hover:bounce inline-block transition-colors origin-left ease-linear duration-300" style="transition-delay:${delay}; animation-delay:${delay};" >${
+        result += `<span class="group-hover:text-secondary sm:group-hover:bounce inline-block transition-colors origin-left ease-linear duration-300" style="transition-delay:${delay}; animation-delay:${delay};" >${
       str[i] === " " ? "&nbsp;" : str[i]
     }</span>`;
     }
     return result;
-};
+}
 
 menuItems.forEach((item) => {
     const text = item.textContent;
@@ -61,15 +61,12 @@ introTextCont.innerHTML = withSpan.join("");
 const heroAccent = document.querySelector(".hero-accent");
 
 const accentObserver = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("animate");
-            } else {
-                entry.target.classList.remove("animate");
-            }
-        });
-    }, {
+    (entries) =>
+    entries.forEach((entry) => {
+        entry.isIntersecting ?
+            entry.target.classList.add("animate") :
+            entry.target.classList.remove("animate");
+    }), {
         threshold: 0.4,
     }
 );
@@ -83,17 +80,16 @@ const header = document.querySelector("header");
 const toTop = document.querySelector(".to-top");
 
 const headerObserver = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (!entry.isIntersecting) {
-                header.classList.add("scrolled");
-                toTop.classList.add("show-to-top");
-            } else {
-                header.classList.remove("scrolled");
-                toTop.classList.remove("show-to-top");
-            }
-        });
-    }, {
+    (entries) =>
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            header.classList.add("scrolled");
+            toTop.classList.add("show-to-top");
+        } else {
+            header.classList.remove("scrolled");
+            toTop.classList.remove("show-to-top");
+        }
+    }), {
         threshold: 0.1,
     }
 );
@@ -106,15 +102,12 @@ toTop.addEventListener("click", () => window.scrollTo(0, 0));
 const aboutCont = document.querySelectorAll(".about-card");
 
 const aboutObserver = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.querySelector("img").classList.add("show-image");
-            } else {
-                entry.target.querySelector("img").classList.remove("show-image");
-            }
-        });
-    }, {
+    (entries) =>
+    entries.forEach((entry) => {
+        entry.isIntersecting ?
+            entry.target.querySelector("img").classList.add("show-image") :
+            entry.target.querySelector("img").classList.remove("show-image");
+    }), {
         threshold: 0.4,
     }
 );
@@ -126,15 +119,12 @@ aboutCont.forEach((cont) => aboutObserver.observe(cont));
 const imageContainers = document.querySelectorAll(".image");
 
 const imageObserver = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("reveal");
-            } else {
-                entry.target.classList.remove("reveal");
-            }
-        });
-    }, {
+    (entries) =>
+    entries.forEach((entry) => {
+        entry.isIntersecting ?
+            entry.target.classList.add("reveal") :
+            entry.target.classList.remove("reveal");
+    }), {
         threshold: 0.1,
     }
 );
@@ -144,15 +134,12 @@ imageContainers.forEach((cont) => imageObserver.observe(cont));
 const serviceContainers = document.querySelectorAll("#services article");
 
 const serviceObserver = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show-service");
-            } else {
-                entry.target.classList.remove("show-service");
-            }
-        });
-    }, {
+    (entries) =>
+    entries.forEach((entry) => {
+        entry.isIntersecting ?
+            entry.target.classList.add("show-service") :
+            entry.target.classList.remove("show-service");
+    }), {
         threshold: 0.3,
     }
 );
@@ -166,11 +153,9 @@ const inputs = bookingForm.querySelectorAll(".input");
 
 inputs.forEach((input) => {
     input.addEventListener("blur", (e) => {
-        if (e.target.value) {
-            e.target.nextElementSibling.classList.add("-translate-y-16");
-        } else {
+        e.target.value ?
+            e.target.nextElementSibling.classList.add("-translate-y-16") :
             e.target.nextElementSibling.classList.remove("-translate-y-16");
-        }
     });
 });
 
@@ -202,35 +187,33 @@ const switchBtns = Array.from(document.querySelectorAll(".switch"));
 let intervalIndex = 0;
 let interval;
 
-const autoOscillate = (i) => {
+function autoOscillate(i = intervalIndex) {
     clearInterval(interval);
-    interval = setInterval(() => {
-        autoOscillate();
-    }, 3000);
+    interval = setInterval(() => autoOscillate(), 3000);
     intervalIndex = intervalIndex >= 2 ? 0 : ++intervalIndex;
     const activeBtn = document.querySelector(".current-btn");
     const nextBtn = switchBtns[intervalIndex];
     activeBtn.classList.remove("current-btn");
     nextBtn.classList.add("current-btn");
-    const transfOrigin =
-        intervalIndex < i ? "translate-x-full" : "-translate-x-full";
+    const currTransfOrigin =
+        intervalIndex > i ? "translate-x-full" : "-translate-x-full";
     const activeCard = document.querySelector(".current");
     activeCard.classList.remove("current");
     activeCard.classList.remove("translate-x-full");
     activeCard.classList.remove("-translate-x-full");
     customers[intervalIndex].classList.add("current");
-    customers[intervalIndex].classList.add(transfOrigin);
-};
+    customers[intervalIndex].classList.add(currTransfOrigin);
+}
 
-autoOscillate(4);
+autoOscillate(null);
 
-const switchCards = (e) => {
+function switchCards(e) {
     const prevIndex = intervalIndex;
     const currIndex = switchBtns.findIndex((btn) => btn === e.target);
     if (intervalIndex === currIndex) return;
     intervalIndex = currIndex - 1;
     autoOscillate(prevIndex);
-};
+}
 
 switchBtns.forEach((button) => {
     button.addEventListener("click", switchCards);

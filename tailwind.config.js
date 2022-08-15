@@ -10,7 +10,7 @@ module.exports = {
                 secondary: "#f40000",
                 third: "#02a6fc",
                 text: "#000",
-                fade: "#c9c9c9a2",
+                fade: "#c9c9c9d2",
             },
             fontFamily: {
                 mFont: ["Poppins", "Geneva", "sans-serif"],
